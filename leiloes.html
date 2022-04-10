@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selic</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+  <link href="./assets/css/slick.css" rel="stylesheet" />
+  <!-- <link href="./assets/css/fullpage.css" rel="stylesheet" /> -->
+  <link href="./assets/css/aos.css" rel="stylesheet" />
+  <link href="./assets/css/style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="" id="bodyElement">
+  <header class="header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-2 align-items-center">
+          <div class="logo">
+            <h1>
+              <a class="page-scroll" href="/index.html">
+                Selic
+              </a>
+            </h1>
+          </div>
+        </div>
+        <div class="col-8 col-sm-9 col-md-5 align-items-center">
+          <div class="logo-sub">
+            <p>Relatório de Administração 2021</p>
+          </div>
+        </div>
+
+        <div class="col-3 d-none d-sm-none d-md-flex align-items-center">
+          <div class="search">
+            <form class="search-form">
+              <input type="text" id="search-field" placeholder="Buscar">
+              <input type="submit" class="send-search">
+            </form>
+          </div>
+        </div>
+        <div class="col-1 d-none d-sm-none d-md-flex align-items-center">
+          <div class="download">
+            <a href="#">PDF</a>
+          </div>
+        </div>
+        <div class="col-2 col-sm-1 align-items-center">
+          <div class="menu-trigger"></div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-container">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-12">
+            <ul>
+              <li><a href="o-selic.html">O Selic</a></li>
+              <li><a href="cadastro.html">Cadastro</a></li>
+              <li><a href="acessos.html">Acessos</a></li>
+              <li><a href="operacoes.html">Operações</a></li>
+              <li><a href="leiloes.html">Leilões</a></li>
+              <li><a href="gravames.html">Gravames</a></li>
+              <li><a href="taxas.html">Taxas</a></li>
+              <li><a href="desempenho.html">Desempenho</a></li>
+              <li><a href="agenda.html">Agenda</a></li>
+              <li><a href="glossario.html">Glossário</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="internal" id="leiloes-section">
+    <div class="header-image">
+      <img src="./assets/img/header-page-01.jpg" alt="Header Page">
+    </div>
+    <div class="container-fluid internal-title">
+      <div class="container">
+        <div class="row d-flex justify-content-end">
+          <div class="col-12 col-md-9">
+            <h2 data-aos-once="true" data-aos="fade-right">Leilões</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container internal-content">
+      <div class="row">
+        <div class="col-12 d-md-none d-flex pb-5 justify-content-center">
+          <div class="open-menu">
+            Saiba Mais
+          </div>
+        </div>
+        <div class="col-12 d-none d-md-block col-md-3 pb-5 internal-nav">
+          <ul class="nav nav-tabs" data-aos-once="true" data-aos="fade-right" data-aos-delay="300" id="leiloes-tab"
+            role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="leiloes-link-01-tab" data-bs-toggle="tab"
+                data-bs-target="#leiloes-link-01" type="button" role="tab" aria-controls="leiloes-link-01"
+                aria-selected="true">Processamento dos leilões</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="leiloes-link-02-tab" data-bs-toggle="tab" data-bs-target="#leiloes-link-02"
+                type="button" role="tab" aria-controls="leiloes-link-02" aria-selected="true">Valor financeiro dos
+                leilões de operações compromissadas</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="leiloes-link-03-tab" data-bs-toggle="tab" data-bs-target="#leiloes-link-03"
+                type="button" role="tab" aria-controls="leiloes-link-03" aria-selected="true">Valor financeiro dos
+                leilões de títulos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="leiloes-link-04-tab" data-bs-toggle="tab" data-bs-target="#leiloes-link-04"
+                type="button" role="tab" aria-controls="leiloes-link-04" aria-selected="true">Valor financeiro dos
+                leilões de contratos de swap cambial</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="leiloes-link-05-tab" data-bs-toggle="tab" data-bs-target="#leiloes-link-05"
+                type="button" role="tab" aria-controls="leiloes-link-05" aria-selected="true">Valor Financeiro e
+                quantidade das operações de depósito voluntário</button>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-12 col-md-9 internal-texts">
+          <div class="tab-content" data-aos-once="true" data-aos="fade-left" data-aos-delay="300" id="leiloes-tab">
+
+            <div class="tab-pane fade show active" id="leiloes-link-01" role="tabpanel"
+              aria-labelledby="leiloes-link-01-tab">
+              <h2 class="title">Processamento dos leilões</h2>
+              <p>Os módulos complementares do Selic são responsáveis por processar os leilões de títulos para o TN e os
+                leilões de operações compromissadas e de contratos de swap para o BCB. O gráfico a seguir<sup>29</sup>
+                mostra a evolução da quantidade de leilões de cada tipo nos últimos cinco anos.</p><br>
+              <h4>Gráfico 4.1.1 – Número de leilões por tipo de leilão</h4>
+              <div id="LeiloesChart4_1_1"></div>
+              <!-- <img src="./assets/img/leiloes-01.png" alt=""> -->
+              <p>Em 2021, verificou-se uma redução de cerca de 15% na quantidade total de leilões, a qual passou de
+                1.540 em 2020 para 1.309. Os leilões de títulos e compromissadas seguiram essa tendência e apresentaram
+                uma redução de 30,4% e 8,3%, respectivamente. Os leilões de títulos passaram de 649 em 2020 para 452 em
+                2021. Já os leilões de compromissadas passaram de 459 em 2020 para 421 em 2021. Os leilões de swap
+                apresentaram um ligeiro aumento de 0,9%, passando de 432 em 2020 para 436 em 2021. Observa-se que não há
+                uma tendência definida em relação ao número de leilões, uma vez que as estratégias de atuação do TN e do
+                BCB variam de acordo com a conjuntura econômico-financeira do período.</p>
+              <small class="legenda">29. Número de leilões discriminado de acordo com os tipos de leilão. Refere-se ao
+                total de cada ano.</small>
+
+            </div>
+
+            <div class="tab-pane fade" id="leiloes-link-02" role="tabpanel" aria-labelledby="leiloes-link-02-tab">
+              <h2 class="title">Valor financeiro dos leilões de operações compromissadas
+              </h2>
+              <p>As operações compromissadas do BCB são realizadas com o propósito de regular a disponibilidade de
+                reservas bancárias, a fim de manter a taxa básica de juros da economia, a taxa Selic, em níveis
+                compatíveis com as diretrizes estabelecidas pelo Copom para a condução da política monetária. O BCB pode
+                realizar leilões de operações compromissadas dirigidos apenas a instituições dealers ou direcionados a
+                todas as instituições financeiras. As operações restritas às instituições dealers têm como objetivo a
+                administração da liquidez bancária de curto prazo e têm vencimento no dia útil seguinte ou no dia útil
+                seguinte ao término da reunião do Copom mais próxima. <br><br>
+                Já para administrar a liquidez em um horizonte de tempo mais amplo, o BCB conduz leilões de operações
+                compromissadas com diferentes prazos, os quais são abertos a todas as instituições financeiras
+                participantes do Selic. O gráfico a seguir<sup>30</sup> mostra a evolução do valor financeiro dos
+                leilões de operações compromissadas nos últimos cinco anos.</p><br>
+              <h4>Gráfico 4.2.1 – Valor financeiro dos leilões de operações compromissadas</h4>
+              <div id="LeiloesChart4_2_1"></div>
+              <!-- <img src="./assets/img/leiloes-02.png" alt=""> -->
+              Em 2021, o valor financeiro mensal médio dos leilões de operações compromissadas realizados pelo BCB
+              aumentou 110,2%, de R$9,8 trilhões em 2020 para R$20,6 trilhões em 2021. Esse aumento ocorreu em função de
+              alterações operacionais na gestão da liquidez do mercado de reservas bancárias.
+              <small class="legenda">30. Valor financeiro dos leilões de operações compromissadas. Refere-se ao valor
+                financeiro total de cada mês.</small>
+
+            </div>
+            <div class="tab-pane fade" id="leiloes-link-03" role="tabpanel" aria-labelledby="leiloes-link-03-tab">
+              <h2 class="title">Valor financeiro dos leilões de títulos
+              </h2>
+              <p>O TN realiza leilões de títulos públicos direcionados a todas as instituições participantes do Selic,
+                inclusive o BCB. As demais pessoas jurídicas e as pessoas físicas podem participar das ofertas públicas
+                por intermédio desses participantes. Os leilões tradicionais de venda apresentam uma segunda etapa,
+                caracterizada por uma oferta não competitiva direcionada às instituições dealers. O TN também efetua
+                leilões de troca e de compra para melhor gerenciar os seus passivos e fornecer liquidez adicional aos
+                investidores. O gráfico a seguir<sup>31</sup> mostra a evolução do valor financeiro dos leilões de
+                títulos nos últimos cinco anos.</p><br>
+              <h4>Gráfico 4.3.1 – Valor financeiro dos leilões de títulos</h4>
+              <div id="LeiloesChart4_3_1"></div>
+              <!-- <img src="./assets/img/leiloes-03.png" alt=""> -->
+              <p>
+                Em 2021, o valor financeiro mensal médio dos leilões de títulos efetuados pelo TN aumentou 21,3%, de
+                R$109 bilhões em 2020 para R$132,2 bilhões em 2021, em linha com as diretrizes estabelecidas pelo TN em
+                seu Plano Anual de
+                Financiamento (PAF).
+              </p>
+              <small class="legenda">31. Valor financeiro dos leilões de títulos. Refere-se ao valor financeiro total de
+                cada mês.</small>
+
+            </div>
+            <div class="tab-pane fade" id="leiloes-link-04" role="tabpanel" aria-labelledby="leiloes-link-04-tab">
+              <h2 class="title">Valor financeiro dos leilões de contratos de swap cambial
+              </h2>
+              <p>O BCB utiliza o swap cambial como instrumento para favorecer o funcionamento regular do mercado cambial
+                e oferecer hedge para os agentes econômicos. A compra de contratos pelo BCB é denominada de “swap
+                cambial tradicional” e corresponde a assumir posição passiva em variação cambial e posição ativa na taxa
+                Selic. Contrariamente, a venda de contratos corresponde a assumir posição ativa em variação cambial e
+                posição passiva na taxa Selic e é denominada de “swap reverso”. O gráfico a seguir<sup>32</sup> mostra a
+                evolução do valor financeiro dos leilões de contratos de swap cambial nos últimos cinco anos.</p><br>
+              <h4>Gráfico 4.4.1 – Valor financeiro dos leilões de contratos de swap cambial</h4>
+              <div id="LeiloesChart4_4_1"></div>
+              <!-- <img src="./assets/img/leiloes-04.png" alt=""> -->
+              <p>Em 2021, o valor financeiro mensal médio<sup>33</sup> dos leilões de contratos de swap cambial
+                tradicional efetuados pelo BCB aumentou 38,3%, de US$10,9 bilhões em 2020 para US$15,1 bilhões em 2021.
+              </p>
+              <small class="legenda">
+                32. Valor financeiro acumulado dos leilões de contratos de swap cambial, em dólares norte-americanos,
+                apurado em cada mês.<br>
+                33. Para o cálculo do valor financeiro mensal médio, apenas foram considerados os meses em que
+                efetivamente ocorreram leilões.</small>
+
+            </div>
+            <div class="tab-pane fade" id="leiloes-link-05" role="tabpanel" aria-labelledby="leiloes-link-05-tab">
+              <h2 class="title">Valor Financeiro e quantidade das operações de depósito voluntário</h2>
+              <p>A partir de outubro de 2021, o BCB passou a acolher depósitos voluntários a prazo de instituições
+                financeiras. Os depósitos são constituídos e liberados por meio de operações (5002, 5006 e 5012)
+                realizadas no âmbito do Selic. O instrumento é voltado para a administração de excedentes de reservas
+                bancárias, colabora para o controle da taxa de juros de curto prazo e beneficia o alinhamento do BCB às
+                melhores práticas internacionais. <br><br>
+                O gráfico a seguir<sup>34</sup> mostra a evolução da média diária do valor financeiro e da quantidade
+                referentes às aplicações no Depósito voluntário.</p><br>
+              <h4>Gráfico 4.5.1 - Valor Financeiro e quantidade das operações de depósito
+                voluntário</h4>
+              <div id="LeiloesChart4_5_1"></div>
+              <!-- <img src="./assets/img/leiloes-04.png" alt=""> -->
+              <p>Em 2021, o valor financeiro diário médio das operações<sup>35</sup> do Depósito voluntário variou de
+                R$644,4 milhões em outubro para R$7,4 bilhões em dezembro. No mesmo período, a quantidade de operações
+                aumentou de 2 para 3 por dia.</p>
+              <small class="legenda">34 e 35. Valor financeiro e quantidade diários médios de operações do Depósito
+                voluntário, apurados em cada mês.</small>
+
+            </div>
+
+          </div>
+
+          <div class="content-nav">
+            <a href="operacoes.html" class="button prev">Anterior</a>
+            <a href="taxas.html" class="button next">Próximo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="search-results">
+    <div class="close"></div>
+    <div class="search-results-inner">
+      <div class="title">Resultados</div>
+      <div class="focus">
+
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script> -->
+  <script src="//cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/slick.min.js"></script>
+  <!-- <script src="./assets/js/scrolloverflow.min.js"></script>
+<script src="./assets/js/fullpage.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.33.2/apexcharts.min.js" integrity="sha512-iBEfFld2z1SAXCPmgoA40VQtqGP0cEJw4fy+t3ARW30uEfzf8hyrmm4mc5qdth3wZRPdKTv/auk5WH52klRVDg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.28.3/dist/apexcharts.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
+  <script src="./assets/js/chartsCadastro.js"></script>
+  <script src="./assets/js/chartsAcessos.js"></script>
+  <script src="./assets/js/chartsOperacoes.js"></script>
+  <script src="./assets/js/chartsLeiloes.js"></script>
+  <script src="./assets/js/chartsGravames.js"></script>
+  <script src="./assets/js/chartsTaxas.js"></script>
+  <script src="./assets/js/chartsDesempenho.js"></script>
+  <script src="./assets/js/database.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script type="text/javascript">
+    // 	var myFullpage = new fullpage('#fullpage'
+    //   , {licenseKey: '7C9DAA24-E8D442E3-BBA388B3-781A75B5',
+    //     anchors:['hero', 'about', 'cases','faq','testimonials','footer'],
+    //     menu: '#myMenu',
+    //     scrollOverflow: true,
+    // });
+  </script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
