@@ -51,9 +51,7 @@
     var r = [],
       o = window.location.origin,
       c = window.location.pathname;
-    console.log(o), console.log(c);
     var i = o + c;
-    console.log(i);
     var s = window.location.href.replace(i, "");
 
     function l(t) {
@@ -63,9 +61,9 @@
     function d(t) {
       return t = (t = (t = (t = (t = (t = (t = t.toLowerCase()).replace(new RegExp("[ÁÀÂÃ]", "gi"), "a")).replace(new RegExp("[ÉÈÊ]", "gi"), "e")).replace(new RegExp("[ÍÌÎ]", "gi"), "i")).replace(new RegExp("[ÓÒÔÕ]", "gi"), "o")).replace(new RegExp("[ÚÙÛ]", "gi"), "u")).replace(new RegExp("[Ç]", "gi"), "c")
     }
-    "" != s && (console.log(!0), $('[data-bs-target="' + s + '"]').click()), console.log(s), $(".menu-container").find("li").each((function () {
+    "" != s && (console.log(!0), $('[data-bs-target="' + s + '"]').click()), $(".menu-container").find("li").each((function () {
       r.push("./" + $(this).find("a").attr("href"))
-    })), console.log("pages", r), $.each(r, (function (t, e) {
+    })),$.each(r, (function (t, e) {
       $.ajax({
         url: e,
         type: "GET",
