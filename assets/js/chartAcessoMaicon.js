@@ -10057,6 +10057,8 @@ const acessoMessageNumberChart = new Chart(
         },
         options: {
             responsive: true,
+            maintainAspectRatio: true,
+            aspectRatio: 1,
             spanGaps: true,
             elements: {
                 point: {
