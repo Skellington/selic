@@ -177,7 +177,8 @@
               <br>
 
               <h4>Gráfico 2.2.1 – Número de mensagens enviadas e recebidas via RSFN</h4>
-              <div id="chartAcessos02c"></div>
+              <!-- <div id="chartAcessos02c"></div> -->
+              <canvas id="acessoMessageNumber"></canvas>
               <p>Em 2021, houve um aumento no tráfego de mensagens recebidas e enviadas via a RSFN. A média diária de
                 mensagens enviadas pelo Selic elevou-se 18,1%, passando de 90.926 para 107.427, enquanto a média diária
                 de mensagens recebidas cresceu 18%, variando de 52.677 para 62.157.
@@ -237,12 +238,11 @@
       </div>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script> -->
-  <script src="//cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
-    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous">
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
@@ -253,12 +253,11 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.33.2/apexcharts.min.js" integrity="sha512-iBEfFld2z1SAXCPmgoA40VQtqGP0cEJw4fy+t3ARW30uEfzf8hyrmm4mc5qdth3wZRPdKTv/auk5WH52klRVDg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.28.3/dist/apexcharts.min.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
-  <script src="./assets/js/chartsCadastro.js"></script>
   <script src="./assets/js/chartsAcessos.js"></script>
+  <script src="./assets/js/chartAcessoMaicon.js"></script>
   <script src="./assets/js/chartsOperacoes.js"></script>
   <script src="./assets/js/chartsLeiloes.js"></script>
-  <script src="./assets/js/chartsGravames.js"></script>
-  <script src="./assets/js/chartsTaxas.js"></script>
+  z <script src="./assets/js/chartsGravames.js"></script>
   <script src="./assets/js/chartsDesempenho.js"></script>
   <script src="./assets/js/database.js"></script>
   <script src="./assets/js/main.js"></script>
@@ -276,6 +275,7 @@
   <script>
     AOS.init();
   </script>
+  
 </body>
 
 </html>
