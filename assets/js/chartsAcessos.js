@@ -84,7 +84,7 @@
         },
         yaxis: {
           title: {
-            text: "Quantidade (Milhares)"
+            text: "Quantidade (milhares)"
             
           }
         },
@@ -110,7 +110,7 @@
       }).render(), new ApexCharts(document.querySelector("#chartAcessos02a"), {
         series: [{
           name: "Quantidade de usuários cadastrados",
-          data: [4.108, 4.556, 4.92, 5.091, 5.881]
+          data: [ 4.11, 4.56, 4.92, 5.09, 5.88,]        
         }],
         chart: {
           stacked: !0,
@@ -140,7 +140,7 @@
         },
         yaxis: {
           title: {
-            text: "Quantidade (Milhares)"
+            text: "Quantidade (milhares)"
           }
         },
         colors: ["#002E59"],
@@ -159,13 +159,13 @@
         colors: ["#DBC476", "#002E59", "#97A9B8"],
         series: [{
           name: "Administrador",
-          data: [986, 1094, 1142, 1155, 1287]
+          data: [0.99, 1.09, 1.14, 1.16, 1.29]
         }, {
           name: "Gestor de Acesso",
-          data: [132, 138, 149, 173, 191]
+          data: [0.13, 0.14, 0.15, 0.17, 0.19]
         }, {
           name: "Operador",
-          data: [2990, 3324, 3629, 3763, 4403]
+          data: [2.99, 3.32, 3.63, 3.76, 4.40]
         }],
         chart: {
           stacked: !0,
@@ -195,7 +195,7 @@
         },
         yaxis: {
           title: {
-            text: "Quantidade (Milhares)"
+            text: "Quantidade (milhares)"
           }
         },
         fill: {
@@ -238,7 +238,7 @@
         },
         yaxis: {
           title: {
-            text: "Quantidade (Milhares)"
+            text: "Quantidade (milhares)"
           }
         },
         colors: ["#DBC476", "#247BA0"],
@@ -289,7 +289,7 @@
         },
         yaxis: {
           title: {
-            text: "Quantidade (Milhares)"
+            text: "Quantidade (milhares)"
           }
         },
         fill: {
