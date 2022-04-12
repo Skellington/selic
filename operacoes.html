@@ -173,11 +173,15 @@
         <div class="tab-pane fade  show active" id="operacoes-link-02" role="tabpanel" aria-labelledby="operacoes-link-02-tab">
             <h2 class="title">Valor financeiro
 </h2>
-            <p>Como regra geral, as operações no Selic exigem duplo comando, um comando do vendedor dos títulos e outro comando do comprador. O próprio Selic liquida a transferência de custódia dos títulos e a liquidação financeira ocorre no Sistema de Transferência de Reservas (STR), no caso de o comprador e o vendedor utilizarem contas financeiras distintas no referido sistema. Quando o comprador e o vendedor fazem uso da mesma conta financeira para a liquidação, a operação não necessita ir ao STR, cabendo ao Selic se certificar de que a liquidação foi autorizada pelo participante liquidante. O gráfico a seguir<sup>14</sup> mostra a evolução do valor financeiro correspondente a todas as operações com liquidação financeira no Selic, evidenciando o valor liquidado no STR.</p><br>
-            <h4>Gráfico 3.1.1 – Valor financeiro das operações – total e com liquidação no STR</h4>
- <img src="./assets/img/operacoes-01.png" alt="">
- <p>Em 2021, o valor financeiro diário médio das operações cursadas no Selic atingiu R$ 5,7 trilhões, o que representou um crescimento de cerca de 41,5% em relação ao volume de R$ 4 trilhões verificado em 2020. Essa elevação foi mais expressiva no grupo de operações com liquidação no STR, cujo valor financeiro diário médio teve um incremento de 56,9% em relação ao volume do último ano, passando de R$ 2,1 trilhões ao dia para R$ 3,3 trilhões. Este ano, o maior valor financeiro chegou a cerca de R$ 6,7 trilhões em 15 de outubro. Em razão de alterações operacionais na gestão da liquidez do mercado de reservas bancárias não houve mais os picos nos dias úteis seguintes ao término das reuniões do Comitê de Política Monetária (Copom). As datas com menor volume, geralmente, correspondem ao último dia útil de cada ano, nos quais o Selic é encerrado às 13h. Este ano, o valor alcançou R$  4,7 trilhões, em 31 de dezembro.
-</p>
+  <p>Como regra geral, as operações no Selic exigem duplo comando, um comando do vendedor dos títulos e outro comando do comprador. O próprio Selic liquida a transferência de custódia dos títulos e a liquidação financeira ocorre no Sistema de Transferência de Reservas (STR), no caso de o comprador e o vendedor utilizarem contas financeiras distintas no referido sistema. Quando o comprador e o vendedor fazem uso da mesma conta financeira para a liquidação, a operação não necessita ir ao STR, cabendo ao Selic se certificar de que a liquidação foi autorizada pelo participante liquidante. O gráfico a seguir<sup>14</sup> mostra a evolução do valor financeiro correspondente a todas as operações com liquidação financeira no Selic, evidenciando o valor liquidado no STR.</p><br>
+  <h4>Gráfico 3.1.1 – Valor financeiro das operações – total e com liquidação no STR</h4>
+  <div class="d-block d-sm-none">
+    <canvas id="financialValueOperationsMobile"></canvas>
+  </div>
+  <div class="d-none d-md-block d-lg-block">
+    <canvas id="financialValueOperations"></canvas>
+  </div>   
+  <p>Em 2021, o valor financeiro diário médio das operações cursadas no Selic atingiu R$ 5,7 trilhões, o que representou um crescimento de cerca de 41,5% em relação ao volume de R$ 4 trilhões verificado em 2020. Essa elevação foi mais expressiva no grupo de operações com liquidação no STR, cujo valor financeiro diário médio teve um incremento de 56,9% em relação ao volume do último ano, passando de R$ 2,1 trilhões ao dia para R$ 3,3 trilhões. Este ano, o maior valor financeiro chegou a cerca de R$ 6,7 trilhões em 15 de outubro. Em razão de alterações operacionais na gestão da liquidez do mercado de reservas bancárias não houve mais os picos nos dias úteis seguintes ao término das reuniões do Comitê de Política Monetária (Copom). As datas com menor volume, geralmente, correspondem ao último dia útil de cada ano, nos quais o Selic é encerrado às 13h. Este ano, o valor alcançou R$  4,7 trilhões, em 31 de dezembro.</p>
 <small class="legenda">13. Salvo menção em contrário, neste Capítulo foram adotados os seguintes critérios para apuração dasinformações: a operação com registro em data posterior foi considerada na data a que se refere e não foi considerada na data do registro; as operações a termo somente foram consideradas quando liquidadas; não houve descarte de datas com movimento reduzido; não houve descarte de operações em que o preço contratado foi discrepante do preço de lastro aceito pelo BCB em suas operações; não houve descarte de operações em que um dos contratantes era o BCB ou o TN; a operação de intermediação, com um ou dois corretores, foi considerada como apenas uma operação, pelo maior preço contratado; a operação em lote 1xN ou Nx1 foi considerada como N operações, pelo maior preço contratado com o comprador ou vendedor; e as médias diárias foram calculadas considerando apenas os dias em que efetivamente houve operações da espécie.<br>
 14. O valor financeiro total considera todas as operações com liquidação financeira. O valor financeiro STR considera somente as operações liquidadas no STR. Valores apurados em todos os dias úteis. Algumas operações no Selic implicam apenas em transferência de títulos: emissão e baixa de títulos; transferências especiais de títulos sem contrapartida financeira; vinculação e desvinculação; e desmembramento e remembramento de cupons de juros.</small>
           </div>
@@ -399,6 +403,7 @@ O gráfico a seguir<sup>28</sup> mostra a evolução da média diária do valor 
       </div>
     </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script> -->
@@ -412,9 +417,8 @@ O gráfico a seguir<sup>28</sup> mostra a evolução da média diária do valor 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.33.2/apexcharts.min.js" integrity="sha512-iBEfFld2z1SAXCPmgoA40VQtqGP0cEJw4fy+t3ARW30uEfzf8hyrmm4mc5qdth3wZRPdKTv/auk5WH52klRVDg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.28.3/dist/apexcharts.min.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
-<script src="./assets/js/chartsCadastro.js"></script>
-<script src="./assets/js/chartsAcessos.js"></script>
 <script src="./assets/js/chartsOperacoes.js"></script>
+<script src="./assets/js/chartsJSOperacoes.js"></script>
 <script src="./assets/js/chartsLeiloes.js"></script>
 <script src="./assets/js/chartsGravames.js"></script>
 <script src="./assets/js/chartsTaxas.js"></script>
