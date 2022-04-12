@@ -156,7 +156,7 @@
           }
         }
       }).render(), new ApexCharts(document.querySelector("#chartAcessos02b"), {
-        colors: ["#DBC476", "#002E59", "#97A9B8"],
+        colors: ["#DBC476", "#002E59", "#91bff0"],
         series: [{
           name: "Administrador",
           data: [0.99, 1.09, 1.14, 1.16, 1.29]
@@ -175,7 +175,7 @@
         plotOptions: {
           bar: {
             horizontal: !1,
-            columnWidth: "55%",
+            columnWidth: "45%",
             endingShape: "rounded"
           }
         },
