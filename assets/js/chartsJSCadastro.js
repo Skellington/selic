@@ -59,7 +59,11 @@ let numberExpiredTitleTypeConfig = {
                 stacked: true,
             },
             y: {
-                stacked: true
+                stacked: true,
+                title: {
+                    display: true,
+                    text: 'Quantidade'
+                },
             }
         }
     }
@@ -82,7 +86,11 @@ let numberExpiredTitleTypeMobileConfig = {
                 stacked: true,
             },
             y: {
-                stacked: true
+                stacked: true,
+                title: {
+                    display: true,
+                    text: 'Quantidade'
+                },
             }
         }
     }
@@ -140,9 +148,13 @@ let valueByTitleTypeConfig = {
                 stacked: true,
             },
             y: {
-                stacked: true
+                stacked: true,
+                title: {
+                    display: true,
+                    text: 'Volume financeiro (R$ trilhões)'
+                },
             }
-        }
+        },
     }
 };
 
@@ -163,9 +175,13 @@ let valueByTitleTypeMobileConfig = {
                 stacked: true,
             },
             y: {
-                stacked: true
+                stacked: true,
+                title: {
+                    display: true,
+                    text: 'Volume financeiro (R$ trilhões)'
+                },
             }
-        }
+        },
     }
 };
 
