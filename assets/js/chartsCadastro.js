@@ -744,17 +744,53 @@
       u(E)
     })), new ApexCharts(document.querySelector("#CadastroChart1_2_1"), k).render();
     var L = new ApexCharts(document.querySelector("#CadastroChart1_3_1"), C);
-    L.render(), document.querySelector(".Cadastro1_3_1_2017").addEventListener("click", (function () {
+    L.render(), 
+    document.querySelector(".Cadastro1_3_1_2017").addEventListener("click", (function () {
+      document.getElementById('numberOfCustomersByTypeMobileDiv').classList.add('invisible');
+      document.getElementById('numberOfCustomersByTypeMobileDiv').style.height = '0px';
+      document.getElementById('numberOfCustomersByTypeDiv').classList.add('invisible');
+      document.getElementById('numberOfCustomersByTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_3_1').style.display = 'block';
       s(L, 2017)
-    })), document.querySelector(".Cadastro1_3_1_2018").addEventListener("click", (function () {
+    })), 
+    document.querySelector(".Cadastro1_3_1_2018").addEventListener("click", (function () {
+      document.getElementById('numberOfCustomersByTypeMobileDiv').classList.add('invisible');
+      document.getElementById('numberOfCustomersByTypeMobileDiv').style.height = '0px';
+      document.getElementById('numberOfCustomersByTypeDiv').classList.add('invisible');
+      document.getElementById('numberOfCustomersByTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_3_1').style.display = 'block';
       s(L, 2018)
-    })), document.querySelector(".Cadastro1_3_1_2019").addEventListener("click", (function () {
+    })), 
+    document.querySelector(".Cadastro1_3_1_2019").addEventListener("click", (function () {
+      document.getElementById('numberOfCustomersByTypeMobileDiv').classList.add('invisible');
+      document.getElementById('numberOfCustomersByTypeMobileDiv').style.height = '0px';
+      document.getElementById('numberOfCustomersByTypeDiv').classList.add('invisible');
+      document.getElementById('numberOfCustomersByTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_3_1').style.display = 'block';
       s(L, 2019)
-    })), document.querySelector(".Cadastro1_3_1_2020").addEventListener("click", (function () {
+    })), 
+    document.querySelector(".Cadastro1_3_1_2020").addEventListener("click", (function () {
+      document.getElementById('numberOfCustomersByTypeMobileDiv').classList.add('invisible');
+      document.getElementById('numberOfCustomersByTypeMobileDiv').style.height = '0px';
+      document.getElementById('numberOfCustomersByTypeDiv').classList.add('invisible');
+      document.getElementById('numberOfCustomersByTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_3_1').style.display = 'block';
       s(L, 2020)
-    })), document.querySelector(".Cadastro1_3_1_2021").addEventListener("click", (function () {
+    })), 
+    document.querySelector(".Cadastro1_3_1_2021").addEventListener("click", (function () {
+      document.getElementById('numberOfCustomersByTypeMobileDiv').classList.add('invisible');
+      document.getElementById('numberOfCustomersByTypeMobileDiv').style.height = '0px';
+      document.getElementById('numberOfCustomersByTypeDiv').classList.add('invisible');
+      document.getElementById('numberOfCustomersByTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_3_1').style.display = 'block';
       s(L, 2021)
-    })), document.querySelector(".Cadastro1_3_1_all").addEventListener("click", (function () {
+    })), 
+    document.querySelector(".Cadastro1_3_1_all").addEventListener("click", (function () {
+      document.getElementById('numberOfCustomersByTypeMobileDiv').classList.remove('invisible');
+      document.getElementById('numberOfCustomersByTypeMobileDiv').style.height = 'auto';
+      document.getElementById('numberOfCustomersByTypeDiv').classList.remove('invisible');
+      document.getElementById('numberOfCustomersByTypeDiv').style.height = 'auto';
+      document.getElementById('CadastroChart1_3_1').style.display = 'none';
       u(L)
     }));
     var F = new ApexCharts(document.querySelector("#CadastroChart1_4_1"), A);

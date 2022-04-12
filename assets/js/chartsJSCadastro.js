@@ -189,3 +189,86 @@ const valueByTitleTypeMobile = new Chart(
     document.getElementById('valueByTitleTypeMobile'),
     valueByTitleTypeMobileConfig
 );
+
+data = {
+    labels: labels,
+    datasets: [
+        {
+            label: "Outros",
+            borderColor: '#002E59',
+            backgroundColor: '#002E59',
+            data:[3323,3370,3445,3522,3602,3623,3649,3690,3721,3853,3887,3926,3963,3995,4097,4064,4091,4123,4161,4197,4227,4264,4274,4306,4308,4057,4154,4175,4188,4202,4254,4286,4329,4393,4428,4412,4461,4479,4524,4540,4567,4605,4654,4682,4726,4797,4845,4881,4906,4946,4989,5033,5056,5092,4930,4925,4951,4987,4989,5036],
+        },
+        {
+            label: "Fundo regulamentado pela CVM",
+            borderColor: '#CCCCCC',
+            backgroundColor: '#CCCCCC',
+            data:[15077,15175,15332,15442,15535,15756,15894,16030,16182,16294,16404,16581,16699,16775,16833,16986,17135,17265,17359,17490,17568,17785,17899,18012,17851,17977,18126,18288,18420,18546,18736,18979,19210,19458,19669,19942,20238,20499,20826,21073,21330,21624,21948,22804,23190,23600,23961,24394,24767,25155,25694,26121,26598,27095,25658,25804,26158,26431,26644,27012],
+        },
+        {
+            label: "Pessoa física",
+            borderColor: '#827449',
+            backgroundColor: '#827449',
+            data:[337,349,359,538,555,697,703,779,1428,27371,68939,89241,90101,90880,91690,92434,93414,95126,96849,102134,104769,106246,107316,108670,109636,110625,111634,113952,119783,121700,123410,125716,133136,137777,139531,141931,143839,145438,153516,162483,177021,187912,193290,223159,253213,281426,307843,318586,325193,328107,335550,340681,346761,351543,300772,308283,313519,259249,242450,252620]
+        },
+        {
+            label: "Pessoa jurídica não financeira",
+            borderColor: '#00B0F0',
+            backgroundColor: '#00B0F0',
+            data: [184,191,196,226,240,260,272,287,640,3490,3597,6153,6196,6249,6315,6363,6455,6585,6673,6843,6967,7065,7143,7212,7309,7385,7471,7609,7766,7873,7967,8117,8245,8565,8730,8919,9063,9185,9723,10390,11056,11932,12336,12836,13385,13923,14388,14935,15425,15736,16338,16815,17288,17743,13344,13958,14503,15136,15206,15916],
+        }
+    ]
+};
+
+let numberOfCustomersByTypeConfig = {
+    type: 'bar',
+    data: data,
+    options: {
+        responsive: true,
+        aspectRatio: 2,
+        scales: {
+            x: {
+                stacked: true,
+            },
+            y: {
+                stacked: true,
+                title: {
+                    display: true,
+                    text: 'Quantidade (milhares)'
+                },
+            }
+        },
+    }
+};
+
+const numberOfCustomersByType = new Chart(
+    document.getElementById('numberOfCustomersByType'),
+    numberOfCustomersByTypeConfig
+);
+
+let numberOfCustomersByTypeMobileConfig = {
+    type: 'bar',
+    data: data,
+    options: {
+        animation: false,
+        responsive: true,
+        aspectRatio: 1,     
+        scales: {
+            x: {
+                stacked: true,
+            },
+            y: {
+                stacked: true,
+                title: {
+                    display: true,
+                    text: 'Quantidade (milhares)'
+                },
+            }
+        },
+    }
+};
+
+const numberOfCustomersByTypeMobile = new Chart(
+    document.getElementById('numberOfCustomersByTypeMobile'),
+    numberOfCustomersByTypeMobileConfig
+);
