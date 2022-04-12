@@ -536,13 +536,13 @@
         }
       }), c),
       A = (n(d = {
-        colors: ["#002E59", "#cccccc", "#82734A"],
+        colors: ["#DBC476", "#002E59", "#00B0F0"],
         fill: {
           opacity: 1,
-          colors: ["#002E59", "#cccccc", "#82734A"]
+          colors: ["#DBC476", "#002E59", "#00B0F0"]
         },
         series: [{
-          name: " Outros",
+          name: "Garantia Câmara",
           data: l.map((function (e, t) {
             return [e, [13609, 13527, 13550, 13476, 13502, 12987, 12931, 12859, 13230, 14847, 45278, 54188, 55302, 55592, 55674, 55767, 55938, 56166, 56309, 55945, 56042, 56274, 56299, 56439, 56537, 56672, 56916, 57433, 57665, 58166, 58677, 60109, 62423, 63878, 64938, 68028, 70660, 71833, 74099, 75771, 82631, 86972, 89658, 118025, 148338, 176304, 200866, 209510, 217670, 217959, 219844, 221826, 223131, 225306, 33889, 35662, 37686, 39584, 41253, 42673][t]]
           }))
@@ -794,17 +794,53 @@
       u(L)
     }));
     var F = new ApexCharts(document.querySelector("#CadastroChart1_4_1"), A);
-    F.render(), document.querySelector(".Cadastro1_4_1_2017").addEventListener("click", (function () {
+    F.render(), 
+    document.querySelector(".Cadastro1_4_1_2017").addEventListener("click", (function () {
+      document.getElementById('numberOfAccountsByTypeMobileDiv').classList.add('invisible');
+      document.getElementById('numberOfAccountsByTypeMobileDiv').style.height = '0px';
+      document.getElementById('numberOfAccountsByTypeDiv').classList.add('invisible');
+      document.getElementById('numberOfAccountsByTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_4_1').style.display = 'block';
       s(F, 2017)
-    })), document.querySelector(".Cadastro1_4_1_2018").addEventListener("click", (function () {
+    })), 
+    document.querySelector(".Cadastro1_4_1_2018").addEventListener("click", (function () {
+      document.getElementById('numberOfAccountsByTypeMobileDiv').classList.add('invisible');
+      document.getElementById('numberOfAccountsByTypeMobileDiv').style.height = '0px';
+      document.getElementById('numberOfAccountsByTypeDiv').classList.add('invisible');
+      document.getElementById('numberOfAccountsByTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_4_1').style.display = 'block';
       s(F, 2018)
-    })), document.querySelector(".Cadastro1_4_1_2019").addEventListener("click", (function () {
+    })), 
+    document.querySelector(".Cadastro1_4_1_2019").addEventListener("click", (function () {
+      document.getElementById('numberOfAccountsByTypeMobileDiv').classList.add('invisible');
+      document.getElementById('numberOfAccountsByTypeMobileDiv').style.height = '0px';
+      document.getElementById('numberOfAccountsByTypeDiv').classList.add('invisible');
+      document.getElementById('numberOfAccountsByTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_4_1').style.display = 'block';
       s(F, 2019)
-    })), document.querySelector(".Cadastro1_4_1_2020").addEventListener("click", (function () {
+    })), 
+    document.querySelector(".Cadastro1_4_1_2020").addEventListener("click", (function () {
+      document.getElementById('numberOfAccountsByTypeMobileDiv').classList.add('invisible');
+      document.getElementById('numberOfAccountsByTypeMobileDiv').style.height = '0px';
+      document.getElementById('numberOfAccountsByTypeDiv').classList.add('invisible');
+      document.getElementById('numberOfAccountsByTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_4_1').style.display = 'block';
       s(F, 2020)
-    })), document.querySelector(".Cadastro1_4_1_2021").addEventListener("click", (function () {
+    })), 
+    document.querySelector(".Cadastro1_4_1_2021").addEventListener("click", (function () {
+      document.getElementById('numberOfAccountsByTypeMobileDiv').classList.add('invisible');
+      document.getElementById('numberOfAccountsByTypeMobileDiv').style.height = '0px';
+      document.getElementById('numberOfAccountsByTypeDiv').classList.add('invisible');
+      document.getElementById('numberOfAccountsByTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_4_1').style.display = 'block';
       s(F, 2021)
-    })), document.querySelector(".Cadastro1_4_1_all").addEventListener("click", (function () {
+    })), 
+    document.querySelector(".Cadastro1_4_1_all").addEventListener("click", (function () {
+      document.getElementById('numberOfAccountsByTypeMobileDiv').classList.remove('invisible');
+      document.getElementById('numberOfAccountsByTypeMobileDiv').style.height = 'auto';
+      document.getElementById('numberOfAccountsByTypeDiv').classList.remove('invisible');
+      document.getElementById('numberOfAccountsByTypeDiv').style.height = 'auto';
+      document.getElementById('CadastroChart1_4_1').style.display = 'none';
       u(F)
     }))
   }(window, document, jQuery)

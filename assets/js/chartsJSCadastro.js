@@ -272,3 +272,80 @@ const numberOfCustomersByTypeMobile = new Chart(
     document.getElementById('numberOfCustomersByTypeMobile'),
     numberOfCustomersByTypeMobileConfig
 );
+
+data = {
+    labels: labels,
+    datasets: [
+        {
+            label: "Garantia Câmara",
+            borderColor: '#DBC476',
+            backgroundColor: '#DBC476',
+            data:[13609,13527,13550,13476,13502,12987,12931,12859,13230,14847,45278,54188,55302,55592,55674,55767,55938,56166,56309,55945,56042,56274,56299,56439,56537,56672,56916,57433,57665,58166,58677,60109,62423,63878,64938,68028,70660,71833,74099,75771,82631,86972,89658,118025,148338,176304,200866,209510,217670,217959,219844,221826,223131,225306,33889,35662,37686,39584,41253,42673],
+        },
+        {
+            label: "Livre Movimentação",
+            borderColor: '#002E59',
+            backgroundColor: '#002E59',
+            data: [16486,16412,16567,16903,17071,17339,17454,17656,18676,47654,89523,113295,114275,115210,114535,114888,116069,117809,119741,125394,128254,129952,131201,132767,134117,135221,136525,139134,146557,148669,150563,153263,160862,166075,168191,170934,173279,175235,184738,196282,212024,227326,234318,267982,300987,331916,359407,371533,379232,379089,388224,394234,401515,319394,195140,203587,212188,222946,234180,245600],
+        },
+        {
+            label: "Outros",
+            borderColor: '#00B0F0',
+            backgroundColor: '#00B0F0',
+            data:[2230,2232,2236,2236,2243,2244,2249,2247,2254,2223,2099,2119,2117,2108,2115,2119,2123,2121,2129,1966,1977,1982,1991,2010,2021,2041,2056,2061,2088,2099,1994,2091,2118,2156,2174,2195,2219,2249,2283,2311,2352,2423,2506,2592,2726,2826,2935,3034,3151,3079,3203,3294,3367,3452,3535,3583,3651,3725,3796,3879],
+        },
+    ]
+};
+
+let numberOfAccountsByTypeConfig = {
+    type: 'bar',
+    data: data,
+    options: {
+        responsive: true,
+        aspectRatio: 2,
+        scales: {
+            x: {
+                stacked: true,
+            },
+            y: {
+                stacked: true,
+                title: {
+                    display: true,
+                    text: 'Quantidade (milhares)'
+                },
+            }
+        },
+    }
+};
+
+const numberOfAccountsByType = new Chart(
+    document.getElementById('numberOfAccountsByType'),
+    numberOfAccountsByTypeConfig
+);
+
+let numberOfAccountsByTypeMobileConfig = {
+    type: 'bar',
+    data: data,
+    options: {
+        animation: false,
+        responsive: true,
+        aspectRatio: 1,     
+        scales: {
+            x: {
+                stacked: true,
+            },
+            y: {
+                stacked: true,
+                title: {
+                    display: true,
+                    text: 'Quantidade (milhares)'
+                },
+            }
+        },
+    }
+};
+
+const numberOfAccountsByTypeMobile = new Chart(
+    document.getElementById('numberOfAccountsByTypeMobile'),
+    numberOfAccountsByTypeMobileConfig
+);
