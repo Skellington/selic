@@ -297,7 +297,7 @@
           max: 8,
           tickAmount: 8,
           title: {
-            text: "Valor financeiro (R$ trilhões)",
+            text: "Volume financeiro (R$ trilhões)",
             style: {
               fontWeight: 400,
               fontSize: "14px"
@@ -333,10 +333,10 @@
         }
       }), r),
       k = (n(i = {
-        colors: ["#002E59", "#cccccc", "#82734A", "#00B0F0", "#cccccc", "#96A8B8"],
+        colors: ["#002E59", "#cccccc", "#82734A", "#00B0F0", "#97A9B8", "#96A8B8"],
         fill: {
           opacity: 1,
-          colors: ["#002E59", "#cccccc", "#82734A", "#00B0F0", "#cccccc", "#96A8B8"]
+          colors: ["#002E59", "#cccccc", "#82734A", "#00B0F0", "#97A9B8", "#96A8B8"]
         },
         series: [{
           name: "Bancos",
