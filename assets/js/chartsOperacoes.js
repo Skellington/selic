@@ -126,13 +126,13 @@
           }
         }), r),
         V = (a(i = {
-          colors: ["#002E59", "#cccccc", "#82734A", "#CCCCCC", "#96A8B8"],
+          colors: ["#575856", "#827449", "#009AD9", "#002E59", "#CCCCCC", "#DBC476"],
           fill: {
             opacity: 1,
-            colors: ["#002E59", "#cccccc", "#82734A", "#CCCCCC", "#96A8B8"]
+            colors: ["#575856", "#827449", "#009AD9", "#002E59", "#CCCCCC", "#DBC476"],
           },
           series: [{
-            name: "outros",
+            name: "Outros",
             data: [2.36, 2.87, 2.15, 2.06, 2.86, 1.96, 2.58, 2.6, 2.42, 2.38, 3.88, 4.33, 2.46, 4.36, 2.37, 2.03, 3.93, 2.49, 2.41, 4.05, 2.1, 2.21, 3.64, 1.84, 2.86, 3.98, 2.42, 2.09, 4.32, 2.51, 2.76, 3.97, 2.22, 2.58, 3.76, 2.15, 3.14, 4.64, 2.96, 2.5, 3.85, 2.5, 3.98, 6.2, 3.53, 3.85, 5.53, 3.57, 1.47, 2.83, .84, .68, 2.8, .66, 1.63, 3.25, .81, .72, 3.95, .58]
           }, {
             name: "1024",
@@ -172,23 +172,24 @@
           },
           xaxis: {
             categories: ["JAN/17", "FEV/17", "MAR/17", "ABR/17", "MAI/17", "JUN/17", "JUL/17", "AGO/17", "SET/17", "OUT/17", "NOV/17", "DEZ/17", "JAN/18", "FEV/18", "MAR/18", "ABR/18", "MAI/18", "JUN/18", "JUL/18", "AGO/18", "SET/18", "OUT/18", "NOV/18", "DEZ/18", "JAN/19", "FEV/19", "MAR/19", "ABR/19", "MAI/19", "JUN/19", "JUL/19", "AGO/19", "SET/19", "OUT/19", "NOV/19", "DEZ/19", "JAN/20", "FEV/20", "MAR/20", "ABR/20", "MAI/20", "JUN/20", "JUL/20", "AGO/20", "SET/20", "OUT/20", "NOV/20", "DEZ/20", "JAN/21", "FEV/21", "MAR/21", "ABR/21", "MAI/21", "JUN/21", "JUL/21", "AGO/21", "SET/21", "OUT/21", "NOV/21", "DEZ/21"],
+            tickAmount: 30,
             labels: {
               hideOverlappingLabels: true,
-            }
+            },
           },
           yaxis: {
             title: {
-              text: "Valor Financeiro ( trilhões)"
+              text: "Quantidade (milhares)"
             },
-            decimalsInFloat: 3
+            decimalsInFloat: false,
           },
           dataLabels: {
             enabled: !1
           }
         }, "stroke", {
-          width: [5, 5],
+          width: 1,
           curve: "straight",
-          dashArray: [0, 0]
+          dashArray: 1
         }), a(i, "legend", {
           show: !0,
           position: "top",
