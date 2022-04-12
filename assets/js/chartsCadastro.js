@@ -694,17 +694,53 @@
     }));
     
     var E = new ApexCharts(document.querySelector("#CadastroChart1_1_2"), x);
-    E.render(), document.querySelector(".Cadastro1_1_2_2017").addEventListener("click", (function () {
+    E.render(), 
+    document.querySelector(".Cadastro1_1_2_2017").addEventListener("click", (function () {
+      document.getElementById('valueByTitleTypeMobileDiv').classList.add('invisible');
+      document.getElementById('valueByTitleTypeMobileDiv').style.height = '0px';
+      document.getElementById('valueByTitleTypeDiv').classList.add('invisible');
+      document.getElementById('valueByTitleTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_1_2').style.display = 'block';
       s(E, 2017)
-    })), document.querySelector(".Cadastro1_1_2_2018").addEventListener("click", (function () {
+    })), 
+    document.querySelector(".Cadastro1_1_2_2018").addEventListener("click", (function () {
+      document.getElementById('valueByTitleTypeMobileDiv').classList.add('invisible');
+      document.getElementById('valueByTitleTypeMobileDiv').style.height = '0px';
+      document.getElementById('valueByTitleTypeDiv').classList.add('invisible');
+      document.getElementById('valueByTitleTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_1_2').style.display = 'block';
       s(E, 2018)
-    })), document.querySelector(".Cadastro1_1_2_2019").addEventListener("click", (function () {
+    })), 
+    document.querySelector(".Cadastro1_1_2_2019").addEventListener("click", (function () {
+      document.getElementById('valueByTitleTypeMobileDiv').classList.add('invisible');
+      document.getElementById('valueByTitleTypeMobileDiv').style.height = '0px';
+      document.getElementById('valueByTitleTypeDiv').classList.add('invisible');
+      document.getElementById('valueByTitleTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_1_2').style.display = 'block';
       s(E, 2019)
-    })), document.querySelector(".Cadastro1_1_2_2020").addEventListener("click", (function () {
+    })), 
+    document.querySelector(".Cadastro1_1_2_2020").addEventListener("click", (function () {
+      document.getElementById('valueByTitleTypeMobileDiv').classList.add('invisible');
+      document.getElementById('valueByTitleTypeMobileDiv').style.height = '0px';
+      document.getElementById('valueByTitleTypeDiv').classList.add('invisible');
+      document.getElementById('valueByTitleTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_1_2').style.display = 'block';
       s(E, 2020)
-    })), document.querySelector(".Cadastro1_1_2_2021").addEventListener("click", (function () {
+    })), 
+    document.querySelector(".Cadastro1_1_2_2021").addEventListener("click", (function () {
+      document.getElementById('valueByTitleTypeMobileDiv').classList.add('invisible');
+      document.getElementById('valueByTitleTypeMobileDiv').style.height = '0px';
+      document.getElementById('valueByTitleTypeDiv').classList.add('invisible');
+      document.getElementById('valueByTitleTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_1_2').style.display = 'block';
       s(E, 2021)
-    })), document.querySelector(".Cadastro1_1_2_all").addEventListener("click", (function () {
+    })), 
+    document.querySelector(".Cadastro1_1_2_all").addEventListener("click", (function () {
+      document.getElementById('valueByTitleTypeMobileDiv').classList.remove('invisible');
+      document.getElementById('valueByTitleTypeMobileDiv').style.height = 'auto';
+      document.getElementById('valueByTitleTypeDiv').classList.remove('invisible');
+      document.getElementById('valueByTitleTypeDiv').style.height = 'auto';
+      document.getElementById('CadastroChart1_1_2').style.display = 'none';
       u(E)
     })), new ApexCharts(document.querySelector("#CadastroChart1_2_1"), k).render();
     var L = new ApexCharts(document.querySelector("#CadastroChart1_3_1"), C);

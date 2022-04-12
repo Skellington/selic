@@ -65,6 +65,11 @@ let numberExpiredTitleTypeConfig = {
     }
 };
 
+const numberExpiredTitleType = new Chart(
+    document.getElementById('numberExpiredTitleType'),
+    numberExpiredTitleTypeConfig
+);
+
 let numberExpiredTitleTypeMobileConfig = {
     type: 'bar',
     data: data,
@@ -82,12 +87,89 @@ let numberExpiredTitleTypeMobileConfig = {
         }
     }
 };
-const numberExpiredTitleType = new Chart(
-    document.getElementById('numberExpiredTitleType'),
-    numberExpiredTitleTypeConfig
-);
 
 const numberExpiredTitleTypeMobile = new Chart(
     document.getElementById('numberExpiredTitleTypeMobile'),
     numberExpiredTitleTypeMobileConfig
+);
+
+data = {
+    labels: labels,
+    datasets: [
+        {
+            label: "LFT",
+            borderColor: '#00B0F0',
+            backgroundColor: '#00B0F0',
+            data:[1.3891,1.4716,1.4556,1.4848,1.5072,1.5559,1.5882,1.6324,1.6135,1.6375,1.6581,1.6784,1.7184,1.6845,1.7369,1.7742,1.7941,1.8224,1.8912,1.8748,1.9331,1.9845,2.0147,2.0495,2.1396,2.0757,2.1159,2.1594,2.2018,2.2327,2.2757,2.3069,2.3433,2.3747,2.4054,2.4100,2.4328,2.4434,2.2956,2.3387,2.3791,2.3727,2.4061,2.4386,2.3227,2.3480,2.3681,2.4125,2.4565,2.5848,2.5226,2.5662,2.5931,2.6348,2.7033,2.7608,2.5315,2.6507,2.7255,2.7838],
+        },
+        {
+            label: "LTN",
+            borderColor: '#827449',
+            backgroundColor: '#827449',
+            data:[1.0991,1.1639,1.1383,1.1819,1.2112,1.1542,1.2068,1.2830,1.2160,1.2467,1.2785,1.1931,1.2489,1.2857,1.2413,1.3255,1.3376,1.2026,1.2687,1.2889,1.1906,1.2361,1.2684,1.1469,1.2081,1.2448,1.1403,1.1880,1.2361,1.1658,1.2336,1.2545,1.1603,1.2027,1.2548,1.1777,1.2315,1.2681,1.2851,1.2066,1.2580,1.3184,1.1717,1.2679,1.4104,1.4368,1.5390,1.6483,1.7345,1.8229,1.8463,1.6378,1.7148,1.7661,1.6956,1.6958,1.7485,1.4469,1.4847,1.5326],
+        },
+        {
+            label: "NTN-B",
+            borderColor: '#DBC476',
+            backgroundColor: '#DBC476',
+            data:[1.4476,1.5077,1.5155,1.5134,1.4015,1.4140,1.4730,1.4730,1.5128,1.5108,1.4945,1.5061,1.5769,1.5737,1.5928,1.5995,1.5293,1.5185,1.5623,1.4375,1.4467,1.5527,1.5532,1.5765,1.6528,1.6562,1.6936,1.7232,1.6566,1.7189,1.7615,1.7365,1.8021,1.8639,1.8080,1.8412,1.8790,1.9535,1.7939,1.8312,1.8396,1.8344,1.9569,1.8087,1.7730,1.8079,1.8549,1.9934,2.0079,2.0001,2.0001,2.1095,2.0550,2.1025,2.1322,2.0879,2.1321,2.0886,2.1702,2.1947],
+        },
+        {
+            label: "NTN-F",
+            borderColor: '#000',
+            backgroundColor: '#000',
+            data:[0.5883,0.6161,0.6314,0.6375,0.6376,0.6531,0.6522,0.6624,0.6813,0.6879,0.6912,0.6641,0.6783,0.6946,0.7126,0.7214,0.6910,0.6771,0.6648,0.6467,0.6730,0.7214,0.7363,0.7445,0.7260,0.7475,0.7555,0.7631,0.7883,0.8209,0.8102,0.8145,0.8443,0.8724,0.8708,0.8861,0.8728,0.8855,0.8692,0.9041,0.9213,0.9272,0.9220,0.9106,0.9170,0.9382,0.9533,0.9946,0.7881,0.7858,0.7762,0.7973,0.8119,0.8311,0.7946,0.7760,0.7829,0.7484,0.7752,0.8076]
+        },
+        {
+            label: "Outros",
+            borderColor: '#002E59',
+            backgroundColor: '#002E59',
+            data:[0.1169,0.1191,0.1213,0.1202,0.1186,0.1063,0.1064,0.1070,0.1091,0.1084,0.1086,0.1085,0.1100,0.1117,0.1128,0.1131,0.1130,0.1132,0.1139,0.1164,0.1163,0.1200,0.1214,0.1231,0.1209,0.1223,0.1239,0.1251,0.1282,0.1323,0.1321,0.1348,0.1364,0.1365,0.1368,0.1345,0.1375,0.1400,0.1356,0.1378,0.1417,0.1450,0.1462,0.1497,0.1522,0.1563,0.1568,0.1585,0.1617,0.1681,0.1682,0.1216,0.1260,0.1299,0.1274,0.1242,0.1244,0.1243,0.1254,0.1232]
+        }
+    ]
+};
+
+let valueByTitleTypeConfig = {
+    type: 'bar',
+    data: data,
+    options: {
+        responsive: true,
+        aspectRatio: 2,
+        scales: {
+            x: {
+                stacked: true,
+            },
+            y: {
+                stacked: true
+            }
+        }
+    }
+};
+
+const valueByTitleType = new Chart(
+    document.getElementById('valueByTitleType'),
+    valueByTitleTypeConfig
+);
+
+let valueByTitleTypeMobileConfig = {
+    type: 'bar',
+    data: data,
+    options: {
+        animation: false,
+        responsive: true,
+        aspectRatio: 1,     
+        scales: {
+            x: {
+                stacked: true,
+            },
+            y: {
+                stacked: true
+            }
+        }
+    }
+};
+
+const valueByTitleTypeMobile = new Chart(
+    document.getElementById('valueByTitleTypeMobile'),
+    valueByTitleTypeMobileConfig
 );
