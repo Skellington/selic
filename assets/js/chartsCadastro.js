@@ -643,19 +643,56 @@
         }
       }), d),
       M = new ApexCharts(document.querySelector("#CadastroChart1_1_1"), _);
-    M.render(), document.querySelector(".Cadastro1_1_1_2017").addEventListener("click", (function () {
+    M.render()
+    
+    document.querySelector(".Cadastro1_1_1_2017").addEventListener("click", () => {
+      document.getElementById('numberExpiredTitleTypeMobileDiv').classList.add('invisible');
+      document.getElementById('numberExpiredTitleTypeMobileDiv').style.height = '0px';
+      document.getElementById('numberExpiredTitleTypeDiv').classList.add('invisible');
+      document.getElementById('numberExpiredTitleTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_1_1').style.display = 'block';
       s(M, 2017)
-    })), document.querySelector(".Cadastro1_1_1_2018").addEventListener("click", (function () {
+    }), 
+    document.querySelector(".Cadastro1_1_1_2018").addEventListener("click", () => {
+      document.getElementById('numberExpiredTitleTypeMobileDiv').classList.add('invisible');
+      document.getElementById('numberExpiredTitleTypeMobileDiv').style.height = '0px';
+      document.getElementById('numberExpiredTitleTypeDiv').classList.add('invisible');
+      document.getElementById('numberExpiredTitleTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_1_1').style.display = 'block';
       s(M, 2018)
-    })), document.querySelector(".Cadastro1_1_1_2019").addEventListener("click", (function () {
+    }), 
+    document.querySelector(".Cadastro1_1_1_2019").addEventListener("click", () => {
+      document.getElementById('numberExpiredTitleTypeMobileDiv').classList.add('invisible');
+      document.getElementById('numberExpiredTitleTypeMobileDiv').style.height = '0px';
+      document.getElementById('numberExpiredTitleTypeDiv').classList.add('invisible');
+      document.getElementById('numberExpiredTitleTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_1_1').style.display = 'block';
       s(M, 2019)
-    })), document.querySelector(".Cadastro1_1_1_2020").addEventListener("click", (function () {
+    }), 
+    document.querySelector(".Cadastro1_1_1_2020").addEventListener("click", () => {
+      document.getElementById('numberExpiredTitleTypeMobileDiv').classList.add('invisible');
+      document.getElementById('numberExpiredTitleTypeMobileDiv').style.height = '0px';
+      document.getElementById('numberExpiredTitleTypeDiv').classList.add('invisible');
+      document.getElementById('numberExpiredTitleTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_1_1').style.display = 'block';
       s(M, 2020)
-    })), document.querySelector(".Cadastro1_1_1_2021").addEventListener("click", (function () {
+    }), 
+    document.querySelector(".Cadastro1_1_1_2021").addEventListener("click", () => {
+      document.getElementById('numberExpiredTitleTypeMobileDiv').classList.add('invisible');
+      document.getElementById('numberExpiredTitleTypeMobileDiv').style.height = '0px';
+      document.getElementById('numberExpiredTitleTypeDiv').classList.add('invisible');
+      document.getElementById('numberExpiredTitleTypeDiv').style.height = '0px';
+      document.getElementById('CadastroChart1_1_1').style.display = 'block';
       s(M, 2021)
-    })), document.querySelector(".Cadastro1_1_1_all").addEventListener("click", (function () {
-      u(M)
+    }), 
+    document.querySelector(".Cadastro1_1_1_all").addEventListener("click", (function () {
+      document.getElementById('numberExpiredTitleTypeMobileDiv').classList.remove('invisible');
+      document.getElementById('numberExpiredTitleTypeMobileDiv').style.height = 'auto';
+      document.getElementById('numberExpiredTitleTypeDiv').classList.remove('invisible');
+      document.getElementById('numberExpiredTitleTypeDiv').style.height = 'auto';
+      document.getElementById('CadastroChart1_1_1').style.display = 'none';
     }));
+    
     var E = new ApexCharts(document.querySelector("#CadastroChart1_1_2"), x);
     E.render(), document.querySelector(".Cadastro1_1_2_2017").addEventListener("click", (function () {
       s(E, 2017)
