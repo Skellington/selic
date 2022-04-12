@@ -84,7 +84,7 @@
         },
         yaxis: {
           title: {
-            text: "Quantidade (milhares)"
+            text: "Quantidade (milhões)"
             
           }
         },
@@ -96,7 +96,7 @@
           show: !1,
           y: {
             formatter: function (e) {
-              return e + " mil"
+              return e + " milhões"
             }
           }
         },
