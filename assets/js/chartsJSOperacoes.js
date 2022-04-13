@@ -2512,86 +2512,37 @@ let dataChart3111FinanceirosSTR = [
     {"x": "31/12/2021","y": 2.5}
 ];
 
-financialValueOperationsConfig = {
-    type: 'line',
-    data:{
-        datasets: [
-            {
-                label: "Financeiros",
-                data: dataChart311Financeiros,
-                borderColor: '#002E59',
-                backgroundColor: '#002E59',
-            },
-            {
-                label: "Financeiros STR",
-                data: dataChart3111FinanceirosSTR,
-                borderColor: '#DBC476',
-                backgroundColor: '#DBC476',
-            }
-        ]
+var options = {
+    chart: {
+      type: 'line'
     },
-    options: {
-        responsive: true,
-        aspectRatio: 2,
-        elements: {
-            point: {
-                radius: 0 // default to disabled in all datasets
-            }
+    series: [
+        {
+            name: "Financeiros",
+            data: dataChart311Financeiros,
+            color: '#002E59',
         },
-        scales: {
-            y: {
-                title: {
-                    display: true,
-                    text: 'Valor financeiro (R$ trilhões)'
-                },
-            }
-        },
-    }
-}
-
-const financialValueOperations = new Chart(
-    document.getElementById('financialValueOperations'),
-    financialValueOperationsConfig
-)
-
-financialValueOperationsMobileConfig = {
-    type: 'line',
-    data:{
-        datasets: [
-            {
-                label: "Financeiros",
-                data: dataChart311Financeiros,
-                borderColor: '#002E59',
-                backgroundColor: '#002E59',
-            },
-            {
-                label: "Financeiros STR",
-                data: dataChart3111FinanceirosSTR,
-                borderColor: '#DBC476',
-                backgroundColor: '#DBC476',
-            }
-        ]
+        {
+            name: "Financeiros STR",
+            data: dataChart3111FinanceirosSTR,
+            color: '#DBC476',
+        }
+    ],
+    xaxis: {        
+        tickAmount: 20,
+        labels: {
+            hideOverlappingLabels:true, 
+        }
     },
-    options: {
-        responsive: true,
-        aspectRatio: 1,
-        elements: {
-            point: {
-                radius: 0 // default to disabled in all datasets
-            }
-        },
-        scales: {
-            y: {
-                title: {
-                    display: true,
-                    text: 'Valor financeiro (R$ trilhões)'
-                },
-            }
-        },
+    stroke: {
+        width: 2,
+        curve: "straight",
+        dashArray: [0, 0]
     }
-}
+  }
 
-const financialValueOperationsMobile = new Chart(
-    document.getElementById('financialValueOperationsMobile'),
-    financialValueOperationsMobileConfig
-)
+var chart = new ApexCharts(document.querySelector('#OperacoesChart3_1_1'), options);
+
+chart.render();
+
+
