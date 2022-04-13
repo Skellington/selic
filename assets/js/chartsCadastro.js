@@ -66,7 +66,7 @@
     function u(e, t) {
       e.zoomX(new Date("01 Jan 2017").getTime(), new Date("31 Dec 2021").getTime()), e.updateOptions({
         xaxis: {
-          tickAmount: 60
+          tickAmount: 20
         }
       })
     }
@@ -121,6 +121,14 @@
           }))
         }],
         chart: {
+          defaultLocale: "pt_BR",
+          locales: [{
+            name: "pt_BR",
+            options: {
+              months: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Augusto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+              shortMonths: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+            }
+          }],
           width: "100%",
           type: "bar",
           height: 450,
@@ -146,19 +154,17 @@
         },
         xaxis: {
           type: "datetime",
-          tickPlacement: "on",
-          tickAmount: 60,
+          tickAmount: 20,
           labels: {
             show: !0,
-            rotate: -90,
             rotateAlways: !0,
             trim: !1,
-            hideOverlappingLabels: !1,
+            hideOverlappingLabels: true,
             showDuplicates: !0,
             format: "MMM/yy",
             minHeight: 55,
             formatter: function (e, t, n) {
-              return moment(t).format("MMM/YY")
+              return moment(t).locale('pt_BR').format("MMM/YY")
             },
             style: {
               fontSize: "13px",
@@ -269,11 +275,9 @@
         },
         xaxis: {
           type: "datetime",
-          tickPlacement: "on",
-          tickAmount: 60,
+          tickAmount: 20,
           labels: {
             show: !0,
-            rotate: -90,
             rotateAlways: !0,
             trim: !1,
             hideOverlappingLabels: !1,
@@ -281,7 +285,7 @@
             format: "MMM/yy",
             minHeight: 55,
             formatter: function (e, t, n) {
-              return moment(t).format("MMM/YY")
+              return moment(t).locale('pt_BR').format("MMM/YY")
             },
             style: {
               fontSize: "13px",
@@ -322,7 +326,7 @@
           enabled: !1
         }
       }, "stroke", {
-        width: [5, 5],
+        width: 1,
         curve: "straight",
         dashArray: [0, 0]
       }), n(r, "legend", {
@@ -473,7 +477,7 @@
         xaxis: {
           type: "datetime",
           tickPlacement: "on",
-          tickAmount: 60,
+          tickAmount: 20,
           labels: {
             show: !0,
             rotate: -90,
@@ -484,7 +488,7 @@
             format: "MMM/yy",
             minHeight: 55,
             formatter: function (e, t, n) {
-              return moment(t).format("MMM/YY")
+              return moment(t).locale('pt_BR').format("MMM/YY")
             },
             style: {
               fontSize: "13px",
@@ -525,7 +529,7 @@
           enabled: !1
         }
       }, "stroke", {
-        width: [5, 5],
+        width: 1,
         curve: "straight",
         dashArray: [0, 0]
       }), n(c, "legend", {
@@ -542,7 +546,7 @@
           colors: ["#DBC476", "#002E59", "#00B0F0"]
         },
         series: [{
-          name: "Câmara garantidaf",
+          name: "Câmara garantida",
           data: l.map((function (e, t) {
             return [e, [13609, 13527, 13550, 13476, 13502, 12987, 12931, 12859, 13230, 14847, 45278, 54188, 55302, 55592, 55674, 55767, 55938, 56166, 56309, 55945, 56042, 56274, 56299, 56439, 56537, 56672, 56916, 57433, 57665, 58166, 58677, 60109, 62423, 63878, 64938, 68028, 70660, 71833, 74099, 75771, 82631, 86972, 89658, 118025, 148338, 176304, 200866, 209510, 217670, 217959, 219844, 221826, 223131, 225306, 33889, 35662, 37686, 39584, 41253, 42673][t]]
           }))
@@ -579,11 +583,9 @@
         },
         xaxis: {
           type: "datetime",
-          tickPlacement: "on",
-          tickAmount: 60,
+          tickAmount: 20,
           labels: {
             show: !0,
-            rotate: -90,
             rotateAlways: !0,
             trim: !1,
             hideOverlappingLabels: !1,
@@ -591,7 +593,7 @@
             format: "MMM/yy",
             minHeight: 55,
             formatter: function (e, t, n) {
-              return moment(t).format("MMM/YY")
+              return moment(t).locale('pt_BR').format("MMM/YY")
             },
             style: {
               fontSize: "13px",
@@ -632,7 +634,7 @@
           enabled: !1
         }
       }, "stroke", {
-        width: [5, 5],
+        width: 1,
         curve: "straight",
         dashArray: [0, 0]
       }), n(d, "legend", {
@@ -646,201 +648,82 @@
     M.render()
     
     document.querySelector(".Cadastro1_1_1_2017").addEventListener("click", () => {
-      document.getElementById('numberExpiredTitleTypeMobileDiv').classList.add('invisible');
-      document.getElementById('numberExpiredTitleTypeMobileDiv').style.height = '0px';
-      document.getElementById('numberExpiredTitleTypeDiv').classList.add('invisible');
-      document.getElementById('numberExpiredTitleTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_1_1').style.display = 'block';
       s(M, 2017)
     }), 
     document.querySelector(".Cadastro1_1_1_2018").addEventListener("click", () => {
-      document.getElementById('numberExpiredTitleTypeMobileDiv').classList.add('invisible');
-      document.getElementById('numberExpiredTitleTypeMobileDiv').style.height = '0px';
-      document.getElementById('numberExpiredTitleTypeDiv').classList.add('invisible');
-      document.getElementById('numberExpiredTitleTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_1_1').style.display = 'block';
       s(M, 2018)
     }), 
     document.querySelector(".Cadastro1_1_1_2019").addEventListener("click", () => {
-      document.getElementById('numberExpiredTitleTypeMobileDiv').classList.add('invisible');
-      document.getElementById('numberExpiredTitleTypeMobileDiv').style.height = '0px';
-      document.getElementById('numberExpiredTitleTypeDiv').classList.add('invisible');
-      document.getElementById('numberExpiredTitleTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_1_1').style.display = 'block';
       s(M, 2019)
     }), 
     document.querySelector(".Cadastro1_1_1_2020").addEventListener("click", () => {
-      document.getElementById('numberExpiredTitleTypeMobileDiv').classList.add('invisible');
-      document.getElementById('numberExpiredTitleTypeMobileDiv').style.height = '0px';
-      document.getElementById('numberExpiredTitleTypeDiv').classList.add('invisible');
-      document.getElementById('numberExpiredTitleTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_1_1').style.display = 'block';
       s(M, 2020)
     }), 
     document.querySelector(".Cadastro1_1_1_2021").addEventListener("click", () => {
-      document.getElementById('numberExpiredTitleTypeMobileDiv').classList.add('invisible');
-      document.getElementById('numberExpiredTitleTypeMobileDiv').style.height = '0px';
-      document.getElementById('numberExpiredTitleTypeDiv').classList.add('invisible');
-      document.getElementById('numberExpiredTitleTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_1_1').style.display = 'block';
       s(M, 2021)
     }), 
     document.querySelector(".Cadastro1_1_1_all").addEventListener("click", (function () {
-      document.getElementById('numberExpiredTitleTypeMobileDiv').classList.remove('invisible');
-      document.getElementById('numberExpiredTitleTypeMobileDiv').style.height = 'auto';
-      document.getElementById('numberExpiredTitleTypeDiv').classList.remove('invisible');
-      document.getElementById('numberExpiredTitleTypeDiv').style.height = 'auto';
-      document.getElementById('CadastroChart1_1_1').style.display = 'none';
+      u(M)
     }));
     
     var E = new ApexCharts(document.querySelector("#CadastroChart1_1_2"), x);
     E.render(), 
     document.querySelector(".Cadastro1_1_2_2017").addEventListener("click", (function () {
-      document.getElementById('valueByTitleTypeMobileDiv').classList.add('invisible');
-      document.getElementById('valueByTitleTypeMobileDiv').style.height = '0px';
-      document.getElementById('valueByTitleTypeDiv').classList.add('invisible');
-      document.getElementById('valueByTitleTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_1_2').style.display = 'block';
       s(E, 2017)
     })), 
     document.querySelector(".Cadastro1_1_2_2018").addEventListener("click", (function () {
-      document.getElementById('valueByTitleTypeMobileDiv').classList.add('invisible');
-      document.getElementById('valueByTitleTypeMobileDiv').style.height = '0px';
-      document.getElementById('valueByTitleTypeDiv').classList.add('invisible');
-      document.getElementById('valueByTitleTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_1_2').style.display = 'block';
       s(E, 2018)
     })), 
     document.querySelector(".Cadastro1_1_2_2019").addEventListener("click", (function () {
-      document.getElementById('valueByTitleTypeMobileDiv').classList.add('invisible');
-      document.getElementById('valueByTitleTypeMobileDiv').style.height = '0px';
-      document.getElementById('valueByTitleTypeDiv').classList.add('invisible');
-      document.getElementById('valueByTitleTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_1_2').style.display = 'block';
       s(E, 2019)
     })), 
     document.querySelector(".Cadastro1_1_2_2020").addEventListener("click", (function () {
-      document.getElementById('valueByTitleTypeMobileDiv').classList.add('invisible');
-      document.getElementById('valueByTitleTypeMobileDiv').style.height = '0px';
-      document.getElementById('valueByTitleTypeDiv').classList.add('invisible');
-      document.getElementById('valueByTitleTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_1_2').style.display = 'block';
       s(E, 2020)
     })), 
     document.querySelector(".Cadastro1_1_2_2021").addEventListener("click", (function () {
-      document.getElementById('valueByTitleTypeMobileDiv').classList.add('invisible');
-      document.getElementById('valueByTitleTypeMobileDiv').style.height = '0px';
-      document.getElementById('valueByTitleTypeDiv').classList.add('invisible');
-      document.getElementById('valueByTitleTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_1_2').style.display = 'block';
       s(E, 2021)
     })), 
     document.querySelector(".Cadastro1_1_2_all").addEventListener("click", (function () {
-      document.getElementById('valueByTitleTypeMobileDiv').classList.remove('invisible');
-      document.getElementById('valueByTitleTypeMobileDiv').style.height = 'auto';
-      document.getElementById('valueByTitleTypeDiv').classList.remove('invisible');
-      document.getElementById('valueByTitleTypeDiv').style.height = 'auto';
-      document.getElementById('CadastroChart1_1_2').style.display = 'none';
       u(E)
     })), new ApexCharts(document.querySelector("#CadastroChart1_2_1"), k).render();
     var L = new ApexCharts(document.querySelector("#CadastroChart1_3_1"), C);
     L.render(), 
     document.querySelector(".Cadastro1_3_1_2017").addEventListener("click", (function () {
-      document.getElementById('numberOfCustomersByTypeMobileDiv').classList.add('invisible');
-      document.getElementById('numberOfCustomersByTypeMobileDiv').style.height = '0px';
-      document.getElementById('numberOfCustomersByTypeDiv').classList.add('invisible');
-      document.getElementById('numberOfCustomersByTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_3_1').style.display = 'block';
       s(L, 2017)
     })), 
     document.querySelector(".Cadastro1_3_1_2018").addEventListener("click", (function () {
-      document.getElementById('numberOfCustomersByTypeMobileDiv').classList.add('invisible');
-      document.getElementById('numberOfCustomersByTypeMobileDiv').style.height = '0px';
-      document.getElementById('numberOfCustomersByTypeDiv').classList.add('invisible');
-      document.getElementById('numberOfCustomersByTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_3_1').style.display = 'block';
       s(L, 2018)
     })), 
     document.querySelector(".Cadastro1_3_1_2019").addEventListener("click", (function () {
-      document.getElementById('numberOfCustomersByTypeMobileDiv').classList.add('invisible');
-      document.getElementById('numberOfCustomersByTypeMobileDiv').style.height = '0px';
-      document.getElementById('numberOfCustomersByTypeDiv').classList.add('invisible');
-      document.getElementById('numberOfCustomersByTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_3_1').style.display = 'block';
       s(L, 2019)
     })), 
     document.querySelector(".Cadastro1_3_1_2020").addEventListener("click", (function () {
-      document.getElementById('numberOfCustomersByTypeMobileDiv').classList.add('invisible');
-      document.getElementById('numberOfCustomersByTypeMobileDiv').style.height = '0px';
-      document.getElementById('numberOfCustomersByTypeDiv').classList.add('invisible');
-      document.getElementById('numberOfCustomersByTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_3_1').style.display = 'block';
       s(L, 2020)
     })), 
     document.querySelector(".Cadastro1_3_1_2021").addEventListener("click", (function () {
-      document.getElementById('numberOfCustomersByTypeMobileDiv').classList.add('invisible');
-      document.getElementById('numberOfCustomersByTypeMobileDiv').style.height = '0px';
-      document.getElementById('numberOfCustomersByTypeDiv').classList.add('invisible');
-      document.getElementById('numberOfCustomersByTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_3_1').style.display = 'block';
       s(L, 2021)
     })), 
     document.querySelector(".Cadastro1_3_1_all").addEventListener("click", (function () {
-      document.getElementById('numberOfCustomersByTypeMobileDiv').classList.remove('invisible');
-      document.getElementById('numberOfCustomersByTypeMobileDiv').style.height = 'auto';
-      document.getElementById('numberOfCustomersByTypeDiv').classList.remove('invisible');
-      document.getElementById('numberOfCustomersByTypeDiv').style.height = 'auto';
-      document.getElementById('CadastroChart1_3_1').style.display = 'none';
       u(L)
     }));
     var F = new ApexCharts(document.querySelector("#CadastroChart1_4_1"), A);
     F.render(), 
     document.querySelector(".Cadastro1_4_1_2017").addEventListener("click", (function () {
-      document.getElementById('numberOfAccountsByTypeMobileDiv').classList.add('invisible');
-      document.getElementById('numberOfAccountsByTypeMobileDiv').style.height = '0px';
-      document.getElementById('numberOfAccountsByTypeDiv').classList.add('invisible');
-      document.getElementById('numberOfAccountsByTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_4_1').style.display = 'block';
       s(F, 2017)
     })), 
     document.querySelector(".Cadastro1_4_1_2018").addEventListener("click", (function () {
-      document.getElementById('numberOfAccountsByTypeMobileDiv').classList.add('invisible');
-      document.getElementById('numberOfAccountsByTypeMobileDiv').style.height = '0px';
-      document.getElementById('numberOfAccountsByTypeDiv').classList.add('invisible');
-      document.getElementById('numberOfAccountsByTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_4_1').style.display = 'block';
       s(F, 2018)
     })), 
     document.querySelector(".Cadastro1_4_1_2019").addEventListener("click", (function () {
-      document.getElementById('numberOfAccountsByTypeMobileDiv').classList.add('invisible');
-      document.getElementById('numberOfAccountsByTypeMobileDiv').style.height = '0px';
-      document.getElementById('numberOfAccountsByTypeDiv').classList.add('invisible');
-      document.getElementById('numberOfAccountsByTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_4_1').style.display = 'block';
       s(F, 2019)
     })), 
     document.querySelector(".Cadastro1_4_1_2020").addEventListener("click", (function () {
-      document.getElementById('numberOfAccountsByTypeMobileDiv').classList.add('invisible');
-      document.getElementById('numberOfAccountsByTypeMobileDiv').style.height = '0px';
-      document.getElementById('numberOfAccountsByTypeDiv').classList.add('invisible');
-      document.getElementById('numberOfAccountsByTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_4_1').style.display = 'block';
       s(F, 2020)
     })), 
     document.querySelector(".Cadastro1_4_1_2021").addEventListener("click", (function () {
-      document.getElementById('numberOfAccountsByTypeMobileDiv').classList.add('invisible');
-      document.getElementById('numberOfAccountsByTypeMobileDiv').style.height = '0px';
-      document.getElementById('numberOfAccountsByTypeDiv').classList.add('invisible');
-      document.getElementById('numberOfAccountsByTypeDiv').style.height = '0px';
-      document.getElementById('CadastroChart1_4_1').style.display = 'block';
       s(F, 2021)
     })), 
     document.querySelector(".Cadastro1_4_1_all").addEventListener("click", (function () {
-      document.getElementById('numberOfAccountsByTypeMobileDiv').classList.remove('invisible');
-      document.getElementById('numberOfAccountsByTypeMobileDiv').style.height = 'auto';
-      document.getElementById('numberOfAccountsByTypeDiv').classList.remove('invisible');
-      document.getElementById('numberOfAccountsByTypeDiv').style.height = 'auto';
-      document.getElementById('CadastroChart1_4_1').style.display = 'none';
       u(F)
     }))
   }(window, document, jQuery)

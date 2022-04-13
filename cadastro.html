@@ -129,13 +129,7 @@
                 Outros).
               </p><br>
               <h4 class="titulo-grafico">Gráfico 1.1.1 – Número de vencimentos por tipo de título</h4>
-              <div id="CadastroChart1_1_1" style="display:none;"></div>
-              <div id='numberExpiredTitleTypeMobileDiv' class="d-block d-sm-none">
-                <canvas id="numberExpiredTitleTypeMobile"></canvas>
-              </div>
-              <div id='numberExpiredTitleTypeDiv' class="d-none d-md-block d-lg-block">
-                <canvas id="numberExpiredTitleType"></canvas>
-              </div> 
+              <div id="CadastroChart1_1_1"></div>
               <!-- years nav init   -->
               <div class="graph-container">
                 <ul class="nav nav-tabs" id="titulos-modal-tab" role="tablist">
@@ -177,13 +171,7 @@
                 do mercado, do BCB ou em tesouraria do próprio emissor.
               </p><br><br>
               <h4>Gráfico 1.1.2 – Valor financeiro em custódia por tipo de título</h4>
-              <div id="CadastroChart1_1_2" style="display:none;"></div>
-              <div id='valueByTitleTypeMobileDiv' class="d-block d-sm-none">
-                <canvas id="valueByTitleTypeMobile"></canvas>
-              </div>
-              <div id='valueByTitleTypeDiv' class="d-none d-md-block d-lg-block">
-                <canvas id="valueByTitleType"></canvas>
-              </div>
+              <div id="CadastroChart1_1_2"></div>
               <!-- years nav init   -->
               <div class="graph-container">
                 <ul class="nav nav-tabs" id="titulos-modal-tab" role="tablist">
@@ -259,13 +247,7 @@
                 tipos de clientes existentes no sistema.</p><br>
 
               <h4>Gráfico 1.3.1 – Número de clientes por tipo de cliente</h4>
-              <div id="CadastroChart1_3_1" style="display:none;"></div>
-              <div id='numberOfCustomersByTypeMobileDiv' class="d-block d-sm-none">
-                <canvas id="numberOfCustomersByTypeMobile"></canvas>
-              </div>
-              <div id='numberOfCustomersByTypeDiv' class="d-none d-md-block d-lg-block">
-                <canvas id="numberOfCustomersByType"></canvas>
-              </div>
+              <div id="CadastroChart1_3_1"></div>
               <!-- years nav init   -->
               <div class="graph-container">
                 <ul class="nav nav-tabs" id="titulos-modal-tab" role="tablist">
@@ -312,13 +294,7 @@
                 seguir<sup>7</sup> mostra a evolução do número de contas, discriminado de acordo com os tipos de conta
                 existentes no Selic.</p><br>
               <h4>Gráfico 1.4.1 – Número de contas por tipo de conta</h4>
-              <div id="CadastroChart1_4_1" style="display:none;"></div>
-              <div id='numberOfAccountsByTypeMobileDiv' class="d-block d-sm-none">
-                <canvas id="numberOfAccountsByTypeMobile"></canvas>
-              </div>
-              <div id='numberOfAccountsByTypeDiv' class="d-none d-md-block d-lg-block">
-                <canvas id="numberOfAccountsByType"></canvas>
-              </div>
+              <div id="CadastroChart1_4_1"></div>
               <!-- years nav init   -->
               <div class="graph-container">
                 <ul class="nav nav-tabs" id="titulos-modal-tab" role="tablist">
@@ -376,33 +352,17 @@
       </div>
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/@popperjs/core@2"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
   <script src="./assets/js/aos.js"></script>
   <script src="./assets/js/slick.min.js"></script>
-  <!-- <script src="./assets/js/scrolloverflow.min.js"></script>
-<script src="./assets/js/fullpage.js"></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.33.2/apexcharts.min.js" integrity="sha512-iBEfFld2z1SAXCPmgoA40VQtqGP0cEJw4fy+t3ARW30uEfzf8hyrmm4mc5qdth3wZRPdKTv/auk5WH52klRVDg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"
-    integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js" integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.28.3/dist/apexcharts.min.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
   <script src="./assets/js/main.js"></script>
   <script src="./assets/js/chartsCadastro.js"></script>
   <script src="./assets/js/chartsJSCadastro.js"></script>
-  <script src="./assets/js/chartsAcessos.js"></script>
-  <script src="./assets/js/chartsOperacoes.js"></script>
-  <script src="./assets/js/chartsLeiloes.js"></script>
-  <script src="./assets/js/chartsGravames.js"></script>
-  <script src="./assets/js/chartsTaxas.js"></script>
-  <script src="./assets/js/chartsDesempenho.js"></script>
-  <script src="./assets/js/database.js"></script>
   <script>
     AOS.init();
   </script>
