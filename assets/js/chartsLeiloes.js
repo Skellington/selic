@@ -62,13 +62,13 @@
           },
           series: [{
             name: "Título",
-            data: ["0,40", "0,59", "0,38", "0,65", "0,45"]
+            data: [0.40, 0.59, 0.38, 0.65, 0.45]
           }, {
             name: "Swap",
-            data: ["0,28", "0,66", "0,48", "0,43", "0,44"]
+            data: [0.28, 0.66, 0.48, 0.43, 0.44]
           }, {
             name: "Compromissada",
-            data: ["0,36", "0,36", "0,47", "0,46", "0,42"]
+            data: [0.36, 0.36, 0.47, 0.46, 0.42]
           }],
           chart: {
             stacked: !0,
@@ -76,7 +76,7 @@
             height: 350
           },
           stroke: {
-            show: !0,
+            show: true,
             curve: "smooth",
             lineCap: "butt",
             colors: void 0,
@@ -91,22 +91,19 @@
             }
           },
           xaxis: {
-            categories: [2017, 2018, 2019, 2020, 2021],
-            labels: {
-              rotate: -90
-            }
+            categories: ["2017", "2018", "2019", "2020", "2021"],
           },
           yaxis: {
             title: {
-              text: "Valor Financeiro ( trilhóes)"
+              text: "Quantidade (milhares)"
             },
-            decimalsInFloat: 3
+            decimalsInFloat: 1
           },
           dataLabels: {
             enabled: !1
           }
         }, "stroke", {
-          width: [5, 5],
+          width: 1,
           curve: "straight",
           dashArray: [0, 0]
         }), o(a, "legend", {
