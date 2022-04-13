@@ -991,11 +991,11 @@
           series: [{
             name: "Financeiro",
             type: "column",
-            data: ["13", "533", "332", "19", "1", "2", "2", "3", "2", "60", "0", "0", "0", "0"]
+            data: [13, 533, 332, 19, 1, 2, 2, 3, 2, 60]            
           }, {
             name: "Quantidade",
             type: "line",
-            data: ["1,217", "0,450", "0,810", "0,571", "0,818", "1,500", "1,476", "2,900", "2,050", "2,957", "0,000", "0,000", "0,000", "0,000"]
+            data: [1.217, 0.450, 0.810, 0.571, 0.818, 1.500, 1.476, 2.900, 2.050, 2.957]
           }],
           chart: {
             stacked: !0,
@@ -1018,22 +1018,30 @@
             }
           },
           xaxis: {
-            categories: ["MAR/21", "ABR/21", "MAI/21", "JUN/21", "JUL/21", "AGO/21", "SET/21", "OUT/21", "NOV/21", "DEZ/21", "JAN/22", "FEV/22", "MAR/22", "ABR/22"],
+            categories: ["MAR/21", "ABR/21", "MAI/21", "JUN/21", "JUL/21", "AGO/21", "SET/21", "OUT/21", "NOV/21", "DEZ/21"],
             labels: {
               rotate: -90
             }
           },
-          yaxis: {
-            title: {
-              text: "Valor Financeiro ( trilhóes)"
+          yaxis: [
+            {
+              title: {
+                text: "Valor financeiro (R$ milhões)"
+              },
+              decimalsInFloat: 3
             },
-            decimalsInFloat: 3
-          },
+            {
+              opposite: true,
+              title: {
+                text: "Quantidade"
+              }
+            }
+          ],
           dataLabels: {
             enabled: !1
           }
         }, "stroke", {
-          width: [5, 5],
+          width: 1,
           curve: "straight",
           dashArray: [0, 0]
         }), a(u, "legend", {
