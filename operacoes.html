@@ -1,431 +1,647 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Selic</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <link href="./assets/css/slick.css" rel="stylesheet" />
-    <!-- <link href="./assets/css/fullpage.css" rel="stylesheet" /> -->
-    <link href="./assets/css/aos.css" rel="stylesheet" />
-    <link href="./assets/css/style.css" rel="stylesheet" /> 
-<link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selic</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+  <link href="./assets/css/slick.css" rel="stylesheet" />
+  <!-- <link href="./assets/css/fullpage.css" rel="stylesheet" /> -->
+  <link href="./assets/css/aos.css" rel="stylesheet" />
+  <link href="./assets/css/style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
 <body class="" id="bodyElement">
   <header class="header">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-2 align-items-center">
-        <div class="logo">
-          <h1>
-            <a class="page-scroll" href="index.html">
-              Selic
-            </a>  
-        </h1>
-        </div>
-      </div>
-      <div class="col-8 col-sm-9 col-md-5 align-items-center">
-        <div class="logo-sub">
-          <p>Relatório de Administração 2021</p>
-        </div>
-      </div>
-      
-      <div class="col-3 d-none d-sm-none d-md-flex align-items-center">
-        <div class="search">
-          <form class="search-form">
-            <input type="text" id="search-field" placeholder="Buscar">
-            <input type="submit" class="send-search">
-          </form>
-        </div>
-      </div>
-      <div class="col-1 d-none d-sm-none d-md-flex align-items-center">
-        <div class="download">
-          <a href="#">PDF</a>
-        </div>
-      </div>
-      <div class="col-2 col-sm-1 align-items-center">
-        <div class="menu-trigger"></div>
-      </div>
-    </div>
-  </div>
-  <div class="menu-container">
     <div class="container">
-      <div class="row d-flex align-items-center">
-        <div class="col-12">
-          <ul>
-            <li><a href="o-selic.html">O Selic</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
-            <li><a href="acessos.html">Acessos</a></li>
-            <li><a href="operacoes.html">Operações</a></li>
-            <li><a href="leiloes.html">Leilões</a></li>
-            <li><a href="gravames.html">Gravames</a></li>
-            <li><a href="taxas.html">Taxas</a></li>
-            <li><a href="desempenho.html">Desempenho</a></li>
-            <li><a href="agenda.html">Agenda</a></li>
-            <li><a href="glossario.html">Glossário</a></li>
-          </ul>
+      <div class="row align-items-center">
+        <div class="col-2 align-items-center">
+          <div class="logo">
+            <h1>
+              <a class="page-scroll" href="index.html">
+                Selic
+              </a>
+            </h1>
+          </div>
+        </div>
+        <div class="col-8 col-sm-9 col-md-5 align-items-center">
+          <div class="logo-sub">
+            <p>Relatório de Administração 2021</p>
+          </div>
+        </div>
+
+        <div class="col-3 d-none d-sm-none d-md-flex align-items-center">
+          <div class="search">
+            <form class="search-form">
+              <input type="text" id="search-field" placeholder="Buscar">
+              <input type="submit" class="send-search">
+            </form>
+          </div>
+        </div>
+        <div class="col-1 d-none d-sm-none d-md-flex align-items-center">
+          <div class="download">
+            <a href="#">PDF</a>
+          </div>
+        </div>
+        <div class="col-2 col-sm-1 align-items-center">
+          <div class="menu-trigger"></div>
         </div>
       </div>
     </div>
-  </div>
-</header>  
+    <div class="menu-container">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-12">
+            <ul>
+              <li><a href="o-selic.html">O Selic</a></li>
+              <li><a href="cadastro.html">Cadastro</a></li>
+              <li><a href="acessos.html">Acessos</a></li>
+              <li><a href="operacoes.html">Operações</a></li>
+              <li><a href="leiloes.html">Leilões</a></li>
+              <li><a href="gravames.html">Gravames</a></li>
+              <li><a href="taxas.html">Taxas</a></li>
+              <li><a href="desempenho.html">Desempenho</a></li>
+              <li><a href="agenda.html">Agenda</a></li>
+              <li><a href="glossario.html">Glossário</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
   <section class="internal" id="operacoes-section">
-  <div class="header-image">
-    <img src="./assets/img/header-page-01.jpg" alt="Header Page">
-  </div>
-  <div class="container-fluid internal-title">
-    <div class="container">
-      <div class="row d-flex justify-content-end">
-        <div class="col-12 col-md-9">
-          <h2  data-aos-once="true" data-aos="fade-right">Operações</h2>
+    <div class="header-image">
+      <img src="./assets/img/header-page-01.jpg" alt="Header Page">
+    </div>
+    <div class="container-fluid internal-title">
+      <div class="container">
+        <div class="row d-flex justify-content-end">
+          <div class="col-12 col-md-9">
+            <h2 data-aos-once="true" data-aos="fade-right">Operações</h2>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container internal-content">
-    <div class="row">
-      <div class="col-12 d-md-none d-flex pb-5 justify-content-center">
-        <div class="open-menu">
-          Saiba Mais
+    <div class="container internal-content">
+      <div class="row">
+        <div class="col-12 d-md-none d-flex pb-5 justify-content-center">
+          <div class="open-menu">
+            Saiba Mais
+          </div>
         </div>
-      </div>
-      <div class="col-12 d-none d-md-block col-md-3 pb-5 internal-nav">
-      <ul class="nav nav-tabs"  data-aos-once="true" data-aos="fade-right" data-aos-delay="300" id="operacoes-tab" role="tablist">
-        <!-- <li class="nav-item" role="presentation">
+        <div class="col-12 d-none d-md-block col-md-3 pb-5 internal-nav">
+          <ul class="nav nav-tabs" data-aos-once="true" data-aos="fade-right" data-aos-delay="300" id="operacoes-tab"
+            role="tablist">
+            <!-- <li class="nav-item" role="presentation">
           <button class="nav-link active" id="operacoes-link-01-tab" data-bs-toggle="tab" data-bs-target="#operacoes-link-01" type="button" role="tab" aria-controls="operacoes-link-01" aria-selected="true">Introdução</button>
         </li> -->
-        
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="operacoes-link-02-tab" data-bs-toggle="tab" data-bs-target="#operacoes-link-02" type="button" role="tab" aria-controls="operacoes-link-02" aria-selected="true">Valor financeiro</button>
-        </li>
-        
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="operacoes-link-03-tab" data-bs-toggle="tab" data-bs-target="#operacoes-link-03" type="button" role="tab" aria-controls="operacoes-link-03" aria-selected="true">Quantidade de operações</button>
-        </li>
 
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="operacoes-link-04-tab" data-bs-toggle="tab" data-bs-target="#operacoes-link-04" type="button" role="tab" aria-controls="operacoes-link-04" aria-selected="true">Valor financeiro e quantidade, por tipo de operação</button>
-        </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="operacoes-link-02-tab" data-bs-toggle="tab"
+                data-bs-target="#operacoes-link-02" type="button" role="tab" aria-controls="operacoes-link-02"
+                aria-selected="true">Valor financeiro</button>
+            </li>
 
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="operacoes-link-05-tab" data-bs-toggle="tab" data-bs-target="#operacoes-link-05" type="button" role="tab" aria-controls="operacoes-link-05" aria-selected="true">Valor financeiro das operações compromissadas</button>
-        </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="operacoes-link-03-tab" data-bs-toggle="tab"
+                data-bs-target="#operacoes-link-03" type="button" role="tab" aria-controls="operacoes-link-03"
+                aria-selected="true">Quantidade de operações</button>
+            </li>
 
-        <!-- <li class="nav-item" role="presentation">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="operacoes-link-04-tab" data-bs-toggle="tab"
+                data-bs-target="#operacoes-link-04" type="button" role="tab" aria-controls="operacoes-link-04"
+                aria-selected="true">Valor financeiro e quantidade, por tipo de operação</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="operacoes-link-05-tab" data-bs-toggle="tab"
+                data-bs-target="#operacoes-link-05" type="button" role="tab" aria-controls="operacoes-link-05"
+                aria-selected="true">Valor financeiro das operações compromissadas</button>
+            </li>
+
+            <!-- <li class="nav-item" role="presentation">
           <button class="nav-link" id="operacoes-link-06-tab" data-bs-toggle="tab" data-bs-target="#operacoes-link-06" type="button" role="tab" aria-controls="operacoes-link-06" aria-selected="true">Valor financeiro e quantidade das operações compromissadas por prazo</button>
         </li> -->
 
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="operacoes-link-07-tab" data-bs-toggle="tab" data-bs-target="#operacoes-link-07" type="button" role="tab" aria-controls="operacoes-link-07" aria-selected="true">Valor financeiro e quantidade das operações compromissadas por prazo</button>
-        </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="operacoes-link-07-tab" data-bs-toggle="tab"
+                data-bs-target="#operacoes-link-07" type="button" role="tab" aria-controls="operacoes-link-07"
+                aria-selected="true">Valor financeiro e quantidade das operações compromissadas por prazo</button>
+            </li>
 
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="operacoes-link-08-tab" data-bs-toggle="tab" data-bs-target="#operacoes-link-08" type="button" role="tab" aria-controls="operacoes-link-08" aria-selected="true">Valor financeiro e quantidade das operações definitivas</button>
-        </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="operacoes-link-08-tab" data-bs-toggle="tab"
+                data-bs-target="#operacoes-link-08" type="button" role="tab" aria-controls="operacoes-link-08"
+                aria-selected="true">Valor financeiro e quantidade das operações definitivas</button>
+            </li>
 
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="operacoes-link-09-tab" data-bs-toggle="tab" data-bs-target="#operacoes-link-09" type="button" role="tab" aria-controls="operacoes-link-09" aria-selected="true">Valor financeiro das operações de resgate e juros do Tesouro Nacional</button>
-        </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="operacoes-link-09-tab" data-bs-toggle="tab"
+                data-bs-target="#operacoes-link-09" type="button" role="tab" aria-controls="operacoes-link-09"
+                aria-selected="true">Valor financeiro das operações de resgate e juros do Tesouro Nacional</button>
+            </li>
 
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="operacoes-link-10-tab" data-bs-toggle="tab" data-bs-target="#operacoes-link-10" type="button" role="tab" aria-controls="operacoes-link-10" aria-selected="true">Valor financeiro e quantidade das operações associadas</button>
-        </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="operacoes-link-10-tab" data-bs-toggle="tab"
+                data-bs-target="#operacoes-link-10" type="button" role="tab" aria-controls="operacoes-link-10"
+                aria-selected="true">Valor financeiro e quantidade das operações associadas</button>
+            </li>
 
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="operacoes-link-11-tab" data-bs-toggle="tab" data-bs-target="#operacoes-link-11" type="button" role="tab" aria-controls="operacoes-link-11" aria-selected="true">Valor financeiro e quantidade das operações de intermediação</button>
-        </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="operacoes-link-11-tab" data-bs-toggle="tab"
+                data-bs-target="#operacoes-link-11" type="button" role="tab" aria-controls="operacoes-link-11"
+                aria-selected="true">Valor financeiro e quantidade das operações de intermediação</button>
+            </li>
 
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="operacoes-link-12-tab" data-bs-toggle="tab" data-bs-target="#operacoes-link-12" type="button" role="tab" aria-controls="operacoes-link-12" aria-selected="true">Valor financeiro e quantidade de operações compromissadas conjugadas</button>
-        </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="operacoes-link-12-tab" data-bs-toggle="tab"
+                data-bs-target="#operacoes-link-12" type="button" role="tab" aria-controls="operacoes-link-12"
+                aria-selected="true">Valor financeiro e quantidade de operações compromissadas conjugadas</button>
+            </li>
 
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="operacoes-link-13-tab" data-bs-toggle="tab" data-bs-target="#operacoes-link-13" type="button" role="tab" aria-controls="operacoes-link-13" aria-selected="true">Valor financeiro e quantidade das operações de redesconto</button>
-        </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="operacoes-link-13-tab" data-bs-toggle="tab"
+                data-bs-target="#operacoes-link-13" type="button" role="tab" aria-controls="operacoes-link-13"
+                aria-selected="true">Valor financeiro e quantidade das operações de redesconto</button>
+            </li>
 
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="operacoes-link-14-tab" data-bs-toggle="tab" data-bs-target="#operacoes-link-14" type="button" role="tab" aria-controls="operacoes-link-14" aria-selected="true">Percentual do valor financeiro movimentado nas diferentes grades de horários</button>
-        </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="operacoes-link-14-tab" data-bs-toggle="tab"
+                data-bs-target="#operacoes-link-14" type="button" role="tab" aria-controls="operacoes-link-14"
+                aria-selected="true">Percentual do valor financeiro movimentado nas diferentes grades de
+                horários</button>
+            </li>
 
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="operacoes-link-15-tab" data-bs-toggle="tab" data-bs-target="#operacoes-link-15" type="button" role="tab" aria-controls="operacoes-link-15" aria-selected="true">Valor financeiro e quantidade das operações lançadas no PreMatching e atualizadas no Selic</button>
-        </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="operacoes-link-15-tab" data-bs-toggle="tab"
+                data-bs-target="#operacoes-link-15" type="button" role="tab" aria-controls="operacoes-link-15"
+                aria-selected="true">Valor financeiro e quantidade das operações lançadas no PreMatching e atualizadas
+                no Selic</button>
+            </li>
 
-        <!-- <li class="nav-item" role="presentation">
+            <!-- <li class="nav-item" role="presentation">
           <button class="nav-link" id="operacoes-link-16-tab" data-bs-toggle="tab" data-bs-target="#operacoes-link-16" type="button" role="tab" aria-controls="operacoes-link-16" aria-selected="true">Sistema</button>
         </li> -->
-        
-      </ul>
-      </div>
-      <div class="col-12 col-md-9 internal-texts">
-        <div class="tab-content"  data-aos-once="true" data-aos="fade-left" data-aos-delay="300" id="operacoes-tab">   
-        
-        <div class="tab-pane fade" id="operacoes-link-01" role="tabpanel" aria-labelledby="operacoes-link-01-tab">    
+          </ul>
         </div>
-         
-        
-        <div class="tab-pane fade  show active" id="operacoes-link-02" role="tabpanel" aria-labelledby="operacoes-link-02-tab">        
-          <p>Este capítulo mostra informações sobre as operações registradas no Selic <sup>13</sup>. </p>
-          <h2 class="title">Valor financeiro</h2>
-          <p>Como regra geral, as operações no Selic exigem duplo comando, um comando do vendedor dos títulos e outro comando do comprador. O próprio Selic liquida a transferência de custódia dos títulos e a liquidação financeira ocorre no Sistema de Transferência de Reservas (STR), no caso de o comprador e o vendedor utilizarem contas financeiras distintas no referido sistema. Quando o comprador e o vendedor fazem uso da mesma conta financeira para a liquidação, a operação não necessita ir ao STR, cabendo ao Selic se certificar de que a liquidação foi autorizada pelo participante liquidante. O gráfico a seguir<sup>14</sup> mostra a evolução do valor financeiro correspondente a todas as operações com liquidação financeira no Selic, evidenciando o valor liquidado no STR.</p><br>
-          <h4>Gráfico 3.1.1 – Valor financeiro das operações – total e com liquidação no STR</h4>
-          <br>
-          <div id="OperacoesChart3_1_1"></div>
-          <br>
-          <br> 
-          <p>Em 2021, o valor financeiro diário médio das operações cursadas no Selic atingiu R$ 5,7 trilhões, o que representou um crescimento de cerca de 41,5% em relação ao volume de R$ 4 trilhões verificado em 2020. Essa elevação foi mais expressiva no grupo de operações com liquidação no STR, cujo valor financeiro diário médio teve um incremento de 56,9% em relação ao volume do último ano, passando de R$ 2,1 trilhões ao dia para R$ 3,3 trilhões. Este ano, o maior valor financeiro chegou a cerca de R$ 6,7 trilhões em 15 de outubro. Em razão de alterações operacionais na gestão da liquidez do mercado de reservas bancárias não houve mais os picos nos dias úteis seguintes ao término das reuniões do Comitê de Política Monetária (Copom). As datas com menor volume, geralmente, correspondem ao último dia útil de cada ano, nos quais o Selic é encerrado às 13h. Este ano, o valor alcançou R$  4,7 trilhões, em 31 de dezembro.</p>
-          <small class="legenda">13. Salvo menção em contrário, neste Capítulo foram adotados os seguintes critérios para apuração dasinformações: a operação com registro em data posterior foi considerada na data a que se refere e não foi considerada na data do registro; as operações a termo somente foram consideradas quando liquidadas; não houve descarte de datas com movimento reduzido; não houve descarte de operações em que o preço contratado foi discrepante do preço de lastro aceito pelo BCB em suas operações; não houve descarte de operações em que um dos contratantes era o BCB ou o TN; a operação de intermediação, com um ou dois corretores, foi considerada como apenas uma operação, pelo maior preço contratado; a operação em lote 1xN ou Nx1 foi considerada como N operações, pelo maior preço contratado com o comprador ou vendedor; e as médias diárias foram calculadas considerando apenas os dias em que efetivamente houve operações da espécie.<br>
-          14. O valor financeiro total considera todas as operações com liquidação financeira. O valor financeiro STR considera somente as operações liquidadas no STR. Valores apurados em todos os dias úteis. Algumas operações no Selic implicam apenas em transferência de títulos: emissão e baixa de títulos; transferências especiais de títulos sem contrapartida financeira; vinculação e desvinculação; e desmembramento e remembramento de cupons de juros.</small><br>
-        </div>    
+        <div class="col-12 col-md-9 internal-texts">
+          <div class="tab-content" data-aos-once="true" data-aos="fade-left" data-aos-delay="300" id="operacoes-tab">
 
-        <div class="tab-pane fade" id="operacoes-link-03" role="tabpanel" aria-labelledby="operacoes-link-03-tab">
-          <h2 class="title">Quantidade de operações</h2>
-          <p>O gráfico abaixo<sup>15</sup> mostra a evolução da quantidade diária média das operações registradas no Selic ao longo dos últimos cinco anos, segregada pelos meios de transmissão de comandos. Os participantes podem transmitir comandos para o Selic por mensagens na RSFN e pelo portal do Selic na RTM. Além disso, há operações geradas automaticamente pelo próprio Selic como, por exemplo, as operações referentes a pagamento de juros e resgates. A legenda RSFN identifica que os dois comandos foram transmitidos por essa rede; RTM significa que os dois comandos foram transmitidos por essa rede; RTM-RSFN identifica que os comandos foram transmitidos por redes distintas; e Selic significa que a operação foi gerada automaticamente pelo sistema.</p><br>
-          <h4>Gráfico 3.2.1 – Quantidade de operações por meio de transmissão dos comandos</h4>
-          <br> 
-          <div id="OperacoesChart3_2_1"></div>
-          <!-- <img src="./assets/img/operacoes-02.png" alt=""> -->
-          <p>Em 2021, a quantidade diária média das operações cursadas no Selic atingiu 28.957, o que representou um crescimento de 13,4% em relação à quantidade de 25.529 verificada em 2020. Essa elevação foi mais expressiva no grupo de operações com transmissão RTM-RSFN, cuja média diária passou de 1.971 em 2020 para 2.691 em 2021.</p><br>
-        </div>
-        
-        <div class="tab-pane fade " id="operacoes-link-04" role="tabpanel" aria-labelledby="operacoes-link-04-tab">
-          <h2 class="title">Valor financeiro e quantidade, por tipo de operação</h2>
-          <p>O gráfico abaixo<sup>16</sup> mostra a evolução do valor financeiro diário médio das operações registradas no Selic ao longo dos últimos cinco anos, segregada pelos tipos de operação.</p><br>            
-          <h4>Gráfico 3.3.1 – Valor financeiro por tipo de operação</h4>
-          <br>
-          <div id="OperacoesChart3_3_1"></div><br>
-           <!-- <img src="./assets/img/operacoes-03.png" alt=""> -->
-           <p>Em 2021, o valor financeiro diário médio chegou a R$ 5,7 trilhões. Destes, R$ 2,5 trilhões foi de operações compromissadas (tipo 1054), R$ 2,5 trilhões de compromissos de recompra e revenda (tipo 1056), R$ 267,1 bilhões de operações de redesconto intradia (tipo 1024), R$ 181,7 bilhões de pagamentos de redesconto (tipo 1026), R$ 66,2 bilhões de operações definitivas (tipo 1052) e as demais operações somaram R$ 124,1 bilhões. Na comparação com o ano de 2020, houve aumento no valor financeiro diário médio de todos os segmentos: das operações definitivas, cerca de 33,0%; das operações de redesconto, 20,6%; das operações compromissadas, 44,9%; dos compromissos de recompra e revenda, 45%; dos pagamentos de redesconto, 20,3%; e das demais operações, 23,1%.
-          </p>
-          <img src="./assets/img/operacoes-04.png" alt="">
-          <p>O gráfico a seguir<sup>17</sup>, de maneira similar, traz a evolução da quantidade de operações registradas no Selic ao longo dos últimos cinco anos.</p><br>
-          <h4>Gráfico 3.3.2 – Quantidade por tipo de operação</h4>
-          <br>
-          <div id="OperacoesChart3_3_2"></div>
-          <!-- <img src="./assets/img/operacoes-05.png" alt=""> -->
-          <p>Em 2021, a média de operações por dia foi de 25.168, 1,4% a menos que em 2020.
-          A composição em 2021 foi a seguinte: 34,8% de operações de recompra e revenda (código 1056); 34,8% de operações compromissadas (código 1054); 4,7% de operações de redesconto intradia (código 1024); 3,5% de pagamentos de redesconto (código 1026); 15,5% de operações definitivas (código 1052); e 6,7% de outras operações. Observa-se que houve algumas alterações em relação à composição em 2020, que era: 33,3% de operações de recompra e revenda; 33,3% de operações compromissadas; 3,6% de operações de redesconto intradia; 2,9% de pagamentos de redesconto; 11,8% de operações definitivas; e 15,1% de outras operações.
-          </p>
-          <small class="legenda">15. As informações referem-se à quantidade diária média de operações por meio de transmissão de seus comandos, apurada em cada mês.</small>
-          <small class="legenda">16. As informações referem-se ao valor financeiro diário médio por tipo de operação. Em agosto de 2018, foram descartadas 18 operações definitivas (tipo 1052) sem liquidação no STR e cujos preços indicavam evidente erro operacional.
-          </small>
-          <small class="legenda">17. As informações referem-se à quantidade diária média por código de operação, apurada no mês.</small>
-        </div>
-        
-        <div class="tab-pane fade " id="operacoes-link-05" role="tabpanel" aria-labelledby="operacoes-link-05-tab">
-          <h2 class="title">Valor financeiro das operações compromissadas</h2>
-          <p>As operações compromissadas são definidas como a compra e a venda de títulos com compromisso de revenda assumido pelo comprador e compromisso de recompra assumido pelo vendedor e são representadas pelos códigos de operação 1044, 1047, 1054 e 1057. O gráfico a seguir<sup>18</sup> mostra a evolução do valor financeiro diário médio das operações compromissadas, evidenciando o volume que foi liquidado no STR.</p><br>
-          <h4>Gráfico 3.4.1 – Valor financeiro das operações compromissadas – total e com liquidação no STR</h4>
-          <br>
-          <div id="OperacoesChart3_4_1"></div>
-          <p>Em 2021, o valor financeiro diário médio das operações compromissadas elevouse em 44,7%, variando de R$ 1,8 trilhão em 2020 para R$ 2,6 trilhões. As operações com liquidação no STR tiveram um incremento de 68,5% em relação ao ano anterior. O valor financeiro diário médio desse grupo de operações passou de R$ 803,4 bilhões em 2020 para R$ 1,4 trilhão em 2021.</p><br>
-          <p>O gráfico a seguir traz a evolução da quantidade total de operações compromissadas, bem como a quantidade de operações compromissadas com liquidação no STR, ao longo dos últimos cinco anos.</p><br>
-          <h4>Gráfico 3.4.2 – Quantidade das operações compromissadas – total e com liquidação no STR</h4>
-          <br>
-          <div id="OperacoesChart3_4_2"></div>
-          <!-- <img src="./assets/img/operacoes-07.png" alt=""> -->
-          <p>Em 2021, a quantidade diária média das operações compromissadas elevou-se em 3,4%, variando de 8.585 em 2020 para 8.877. As operações liquidadas no STR, também, apresentaram aumento, cerca de 7,1%, passando de 1.501 por dia em 2020 para 1.607 em 2021.</p>
-          <small class="legenda">18. Valor financeiro diário médio das operações compromissadas, apurado em cada mês. O valor financeiro STR considera somente as operações compromissadas liquidadas no STR.
-          </small>
-        </div>
-        
-        <!-- <div class="tab-pane fade " id="operacoes-link-06" role="tabpanel" aria-labelledby="operacoes-link-06-tab">
+            <div class="tab-pane fade" id="operacoes-link-01" role="tabpanel" aria-labelledby="operacoes-link-01-tab">
+            </div>
+
+
+            <div class="tab-pane fade  show active" id="operacoes-link-02" role="tabpanel"
+              aria-labelledby="operacoes-link-02-tab">
+              <p>Este capítulo mostra informações sobre as operações registradas no Selic <sup>13</sup>. </p>
+              <h2 class="title">Valor financeiro</h2>
+              <p>Como regra geral, as operações no Selic exigem duplo comando, um comando do vendedor dos títulos e
+                outro comando do comprador. O próprio Selic liquida a transferência de custódia dos títulos e a
+                liquidação financeira ocorre no Sistema de Transferência de Reservas (STR), no caso de o comprador e o
+                vendedor utilizarem contas financeiras distintas no referido sistema. Quando o comprador e o vendedor
+                fazem uso da mesma conta financeira para a liquidação, a operação não necessita ir ao STR, cabendo ao
+                Selic se certificar de que a liquidação foi autorizada pelo participante liquidante. O gráfico a
+                seguir<sup>14</sup> mostra a evolução do valor financeiro correspondente a todas as operações com
+                liquidação financeira no Selic, evidenciando o valor liquidado no STR.</p><br>
+              <h4>Gráfico 3.1.1 – Valor financeiro das operações – total e com liquidação no STR</h4>
+              <br>
+              <div id="OperacoesChart3_1_1"></div>
+              <br>
+              <br>
+              <p>Em 2021, o valor financeiro diário médio das operações cursadas no Selic atingiu R$ 5,7 trilhões, o que
+                representou um crescimento de cerca de 41,5% em relação ao volume de R$ 4 trilhões verificado em 2020.
+                Essa elevação foi mais expressiva no grupo de operações com liquidação no STR, cujo valor financeiro
+                diário médio teve um incremento de 56,9% em relação ao volume do último ano, passando de R$ 2,1 trilhões
+                ao dia para R$ 3,3 trilhões. Este ano, o maior valor financeiro chegou a cerca de R$ 6,7 trilhões em 15
+                de outubro. Em razão de alterações operacionais na gestão da liquidez do mercado de reservas bancárias
+                não houve mais os picos nos dias úteis seguintes ao término das reuniões do Comitê de Política Monetária
+                (Copom). As datas com menor volume, geralmente, correspondem ao último dia útil de cada ano, nos quais o
+                Selic é encerrado às 13h. Este ano, o valor alcançou R$ 4,7 trilhões, em 31 de dezembro.</p>
+              <small class="legenda">13. Salvo menção em contrário, neste Capítulo foram adotados os seguintes critérios
+                para apuração dasinformações: a operação com registro em data posterior foi considerada na data a que se
+                refere e não foi considerada na data do registro; as operações a termo somente foram consideradas quando
+                liquidadas; não houve descarte de datas com movimento reduzido; não houve descarte de operações em que o
+                preço contratado foi discrepante do preço de lastro aceito pelo BCB em suas operações; não houve
+                descarte de operações em que um dos contratantes era o BCB ou o TN; a operação de intermediação, com um
+                ou dois corretores, foi considerada como apenas uma operação, pelo maior preço contratado; a operação em
+                lote 1xN ou Nx1 foi considerada como N operações, pelo maior preço contratado com o comprador ou
+                vendedor; e as médias diárias foram calculadas considerando apenas os dias em que efetivamente houve
+                operações da espécie.<br>
+                14. O valor financeiro total considera todas as operações com liquidação financeira. O valor financeiro
+                STR considera somente as operações liquidadas no STR. Valores apurados em todos os dias úteis. Algumas
+                operações no Selic implicam apenas em transferência de títulos: emissão e baixa de títulos;
+                transferências especiais de títulos sem contrapartida financeira; vinculação e desvinculação; e
+                desmembramento e remembramento de cupons de juros.</small><br>
+            </div>
+
+            <div class="tab-pane fade" id="operacoes-link-03" role="tabpanel" aria-labelledby="operacoes-link-03-tab">
+              <h2 class="title">Quantidade de operações</h2>
+              <p>O gráfico abaixo<sup>15</sup> mostra a evolução da quantidade diária média das operações registradas no
+                Selic ao longo dos últimos cinco anos, segregada pelos meios de transmissão de comandos. Os
+                participantes podem transmitir comandos para o Selic por mensagens na RSFN e pelo portal do Selic na
+                RTM. Além disso, há operações geradas automaticamente pelo próprio Selic como, por exemplo, as operações
+                referentes a pagamento de juros e resgates. A legenda RSFN identifica que os dois comandos foram
+                transmitidos por essa rede; RTM significa que os dois comandos foram transmitidos por essa rede;
+                RTM-RSFN identifica que os comandos foram transmitidos por redes distintas; e Selic significa que a
+                operação foi gerada automaticamente pelo sistema.</p><br>
+              <h4>Gráfico 3.2.1 – Quantidade de operações por meio de transmissão dos comandos</h4>
+              <br>
+              <div id="OperacoesChart3_2_1"></div>
+              <!-- <img src="./assets/img/operacoes-02.png" alt=""> -->
+              <p>Em 2021, a quantidade diária média das operações cursadas no Selic atingiu 28.957, o que representou um
+                crescimento de 13,4% em relação à quantidade de 25.529 verificada em 2020. Essa elevação foi mais
+                expressiva no grupo de operações com transmissão RTM-RSFN, cuja média diária passou de 1.971 em 2020
+                para 2.691 em 2021.</p><br>
+            </div>
+
+            <div class="tab-pane fade " id="operacoes-link-04" role="tabpanel" aria-labelledby="operacoes-link-04-tab">
+              <h2 class="title">Valor financeiro e quantidade, por tipo de operação</h2>
+              <p>O gráfico abaixo<sup>16</sup> mostra a evolução do valor financeiro diário médio das operações
+                registradas no Selic ao longo dos últimos cinco anos, segregada pelos tipos de operação.</p><br>
+              <h4>Gráfico 3.3.1 – Valor financeiro por tipo de operação</h4>
+              <br>
+              <div id="OperacoesChart3_3_1"></div><br>
+              <!-- <img src="./assets/img/operacoes-03.png" alt=""> -->
+              <p>Em 2021, o valor financeiro diário médio chegou a R$ 5,7 trilhões. Destes, R$ 2,5 trilhões foi de
+                operações compromissadas (tipo 1054), R$ 2,5 trilhões de compromissos de recompra e revenda (tipo 1056),
+                R$ 267,1 bilhões de operações de redesconto intradia (tipo 1024), R$ 181,7 bilhões de pagamentos de
+                redesconto (tipo 1026), R$ 66,2 bilhões de operações definitivas (tipo 1052) e as demais operações
+                somaram R$ 124,1 bilhões. Na comparação com o ano de 2020, houve aumento no valor financeiro diário
+                médio de todos os segmentos: das operações definitivas, cerca de 33,0%; das operações de redesconto,
+                20,6%; das operações compromissadas, 44,9%; dos compromissos de recompra e revenda, 45%; dos pagamentos
+                de redesconto, 20,3%; e das demais operações, 23,1%.
+              </p>
+              <img src="./assets/img/operacoes-04.png" alt="">
+              <p>O gráfico a seguir<sup>17</sup>, de maneira similar, traz a evolução da quantidade de operações
+                registradas no Selic ao longo dos últimos cinco anos.</p><br>
+              <h4>Gráfico 3.3.2 – Quantidade por tipo de operação</h4>
+              <br>
+              <div id="OperacoesChart3_3_2"></div>
+              <!-- <img src="./assets/img/operacoes-05.png" alt=""> -->
+              <p>Em 2021, a média de operações por dia foi de 25.168, 1,4% a menos que em 2020.
+                A composição em 2021 foi a seguinte: 34,8% de operações de recompra e revenda (código 1056); 34,8% de
+                operações compromissadas (código 1054); 4,7% de operações de redesconto intradia (código 1024); 3,5% de
+                pagamentos de redesconto (código 1026); 15,5% de operações definitivas (código 1052); e 6,7% de outras
+                operações. Observa-se que houve algumas alterações em relação à composição em 2020, que era: 33,3% de
+                operações de recompra e revenda; 33,3% de operações compromissadas; 3,6% de operações de redesconto
+                intradia; 2,9% de pagamentos de redesconto; 11,8% de operações definitivas; e 15,1% de outras operações.
+              </p>
+              <small class="legenda">15. As informações referem-se à quantidade diária média de operações por meio de
+                transmissão de seus comandos, apurada em cada mês.<br>
+                16. As informações referem-se ao valor financeiro diário médio por tipo de operação. Em agosto de 2018,
+                foram descartadas 18 operações definitivas (tipo 1052) sem liquidação no STR e cujos preços indicavam
+                evidente erro operacional.<br>
+                17. As informações referem-se à quantidade diária média por código de operação, apurada no mês.
+              </small>
+            </div>
+
+            <div class="tab-pane fade " id="operacoes-link-05" role="tabpanel" aria-labelledby="operacoes-link-05-tab">
+              <h2 class="title">Valor financeiro das operações compromissadas</h2>
+              <p>As operações compromissadas são definidas como a compra e a venda de títulos com compromisso de revenda
+                assumido pelo comprador e compromisso de recompra assumido pelo vendedor e são representadas pelos
+                códigos de operação 1044, 1047, 1054 e 1057. O gráfico a seguir<sup>18</sup> mostra a evolução do valor
+                financeiro diário médio das operações compromissadas, evidenciando o volume que foi liquidado no STR.
+              </p><br>
+              <h4>Gráfico 3.4.1 – Valor financeiro das operações compromissadas – total e com liquidação no STR</h4>
+              <br>
+              <div id="OperacoesChart3_4_1"></div>
+              <p>Em 2021, o valor financeiro diário médio das operações compromissadas elevouse em 44,7%, variando de R$
+                1,8 trilhão em 2020 para R$ 2,6 trilhões. As operações com liquidação no STR tiveram um incremento de
+                68,5% em relação ao ano anterior. O valor financeiro diário médio desse grupo de operações passou de R$
+                803,4 bilhões em 2020 para R$ 1,4 trilhão em 2021.</p><br>
+              <p>O gráfico a seguir traz a evolução da quantidade total de operações compromissadas, bem como a
+                quantidade de operações compromissadas com liquidação no STR, ao longo dos últimos cinco anos.</p><br>
+              <h4>Gráfico 3.4.2 – Quantidade das operações compromissadas – total e com liquidação no STR</h4>
+              <br>
+              <div id="OperacoesChart3_4_2"></div>
+              <!-- <img src="./assets/img/operacoes-07.png" alt=""> -->
+              <p>Em 2021, a quantidade diária média das operações compromissadas elevou-se em 3,4%, variando de 8.585 em
+                2020 para 8.877. As operações liquidadas no STR, também, apresentaram aumento, cerca de 7,1%, passando
+                de 1.501 por dia em 2020 para 1.607 em 2021.</p>
+              <small class="legenda">18. Valor financeiro diário médio das operações compromissadas, apurado em cada
+                mês. O valor financeiro STR considera somente as operações compromissadas liquidadas no STR.
+              </small>
+            </div>
+
+            <!-- <div class="tab-pane fade " id="operacoes-link-06" role="tabpanel" aria-labelledby="operacoes-link-06-tab">
             <h2 class="title">Valor financeiro e quantidade das operações compromissadas por prazo</h2>
             <p>Lorem </p>
         </div> -->
-        
-        <div class="tab-pane fade " id="operacoes-link-07" role="tabpanel" aria-labelledby="operacoes-link-07-tab">
-          <h2 class="title">Valor financeiro e quantidade das operações compromissadas por prazo</h2>
-          <p>O gráfico a seguir<sup>19</sup> mostra a evolução do valor financeiro das operações compromissadas, segregando operações <em>overnight</em>, intradia e com prazo de retorno superior a um dia.</p><br>
-          <h4>Gráfico 3.5.1 – Valor financeiro das operações compromissadas por prazo</h4>
-          <br>
-          <div id="OperacoesChart3_5_1"></div> 
-          <!-- <img src="./assets/img/operacoes-08.png" alt=""> -->
-          <p>Em 2021, houve um aumento da concentração do valor financeiro diário médio nas operações compromissadas com prazo de um dia (<em>overnight</em>), que representaram R$ 2,5 trilhões, cerca de 99,4% do valor de todas as operações compromissadas, face ao R$ 1,7 trilhão, ou 97,7%, observado em 2020. As compromissadas com prazo de mais de um dia alcançaram o volume de R$ 14,1 bilhões ou 0,6%, inferior aos R$ 37,4 bilhões ou 2,1% apurados em 2020. As operações intradia apresentaram um valor financeiro de apenas R$ 2,1 bilhões ou 0,1%, diminuindo em relação à proporção de R$ 3,1 bilhões ou 0,2% de 2020.
-          </p>
-          <p>O gráfico a seguir<sup>20</sup> mostra a evolução da quantidade das operações
-          compromissadas, segregando a quantidade de operações <em>overnight</em>, intradia e com prazo de retorno superior a um dia.</p><br>                      
-          <h4>Gráfico 3.5.2 – Quantidade das operações compromissadas por prazo</h4>
-          <br>
-          <div id="OperacoesChart3_5_2"></div> 
-          <!-- <img src="./assets/img/operacoes-09.png" alt=""> -->
-          <p>Em 2021, a maioria das operações compromissadas foi <em>overnight</em>, alcançando 98,7% do total ou 8.759 operações por dia. A proporção ficou praticamente estável em relação a 2020, quando as compromissadas <em>overnight</em> representaram 98,9% do total ou 8.491 operações por dia. As compromissadas com prazo superior a um dia alcançaram 111 operações por dia ou 1,3% do total, similar à média de 85 operações por dia ou 1,0% apurados em 2020. As intradia foram apenas 5 por dia em 2021, número menor que 2020, quando foram realizadas 8 operações.</p>
-          <small class="legenda">19. Valor financeiro diário médio das operações compromissadas, apurado em cada mês. Em relação a operaçõescompromissadas, a operação “<em>overnight</em>” é a que apresenta a data do compromisso no dia útil posterior; a operação "intradia" representa a operação em que sua data e a data do compromisso ocorrem no mesmo dia; e “mais que <em>over</em>” é a operação em que o prazo para o compromisso é superior a um dia útil.</small>
-          <small class="legenda">20. Quantidade de operações diária média das operações compromissadas, apurada em cada mês. A operação "<em>overnight</em>" é a que apresenta a data do compromisso no dia útil posterior; a operação “intradia” representa a operação em que sua data e a data do compromisso ocorrem no mesmo dia; e “mais que <em>over</em>” é a operação em que o prazo para o compromisso é superior a um dia útil.</small>
-        </div>
-        
-        <div class="tab-pane fade " id="operacoes-link-08" role="tabpanel" aria-labelledby="operacoes-link-09-tab">
-          <h2 class="title">Valor financeiro e quantidade das operações definitivas</h2>
-          <p>As operações definitivas são definidas como a compra e a venda de títulos sem a assunção de compromissos. O gráfico a seguir<sup>21</sup> mostra a evolução do valor financeiro diário médio das operações definitivas, evidenciando o valor financeiro que foi liquidado no STR.</p><br>
-          <h4>Gráfico 3.6.1 – Valor financeiro das operações definitivas – total e com liquidação no STR</h4>
-          <br>
-          <div id="OperacoesChart3_6_1"></div>
-          <!-- <img src="./assets/img/operacoes-10.png" alt=""> -->
-          <p>Em 2021, o valor financeiro diário médio das operações definitivas elevou-se em 33%, variando de R$ 49,8 bilhões em 2020 para R$ 66,2 bilhões. As operações liquidadas no STR elevaram-se, com um incremento de 36,2% em relação ao ano anterior. O valor financeiro diário médio desse grupo de operações passou de R$ 41,9 bilhões em 2020 para R$ 57 bilhões em 2021.</p>
-          <p>O gráfico a seguir<sup>22</sup> mostra a quantidade diária média de todas as
-          operações definitivas, evidenciando a quantidade das operações liquidadas no STR.</p><br>
-          <h4>Gráfico 3.6.2 – Quantidade das operações definitivas – total e com liquidação no STR</h4>
-          <br>
-          <div id="OperacoesChart3_6_2"></div>
-          <!-- <img src="./assets/img/operacoes-11.png" alt=""> -->
-          <p>Em 2021, a quantidade diária média das operações definitivas elevou-se em 29,6%, variando de 3.007 operações por dia em 2020 para 3.896 operações. As operações liquidadas no STR apresentaram um incremento, que chegou a 28,3% em relação ao ano anterior. A quantidade diária média desse grupo de operações passou de 2.002 em 2020 para 2.568 em 2021.</p>
-          <small class="legenda">21. Valor financeiro diário médio das operações definitivas, apurado em cada mês. O valor financeiro STRconsidera somente as operações liquidadas no STR. Em agosto de 2018, foram descartadas 18 operações sem liquidação no STR e cujos preços indicavam evidente erro operacional.
-          </small>
-          <small class="legenda">22. Quantidade diária média de operações definitivas, apurado em cada mês. A quantidade STR considera somente as operações liquidadas no STR.</small>
-        </div>
-        
-        <div class="tab-pane fade " id="operacoes-link-09" role="tabpanel" aria-labelledby="operacoes-link-09-tab">
-          <h2 class="title">Valor financeiro das operações de resgate e juros do Tesouro Nacional</h2>
-          <p>O gráfico abaixo mostra a evolução do valor financeiro diário médio das operações registradas no Selic referentes ao resgate de títulos públicos federais custodiados e ao pagamento de juros dos títulos públicos federais que, no ato de sua emissão pelo TN possuem essa característica, como as Notas do Tesouro Nacional (NTN).</p><br>
-          <h4>Gráfico 3.7.1 – Valor financeiro das operações de resgate e juros do TN</h4>
-          <br>
-          <div id="OperacoesChart3_7_1"></div>
-          <!-- <img src="./assets/img/operacoes-12.png" alt=""> -->
-          <br><br>
-          <p>Em 2021, o valor financeiro diário médio das operações de resgate (código 1012) aumentou 49,9%, passando de R$ 89,8 bilhões em 2020 para R$ 134,6 bilhões. As operações referentes aos juros (código 1060) aumentaram 9,5%, variando de R$ 14,5 bilhões em 2020 para R$  15,9 bilhões em 2021.
-          </p>
-        </div>
-        
-        <div class="tab-pane fade " id="operacoes-link-10" role="tabpanel" aria-labelledby="operacoes-link-10-tab">
-          <h2 class="title">Valor financeiro e quantidade das operações associadas</h2>
-          <p>A associação de operações permite que a liquidação seja realizada pelos resultados compensados. É um mecanismo para atender necessidades de liquidez dos participantes. Podem ser associadas as operações que tenham por objeto o mesmo título, desde que em seu conjunto haja apenas uma operação principal, sendo todas as demais operações acessórias. As operações acessórias dão suporte para a liquidação da operação principal, ou seja, são operações de financiamento, como uma operação compromissada intradia ou um redesconto intradia. O gráfico a seguir<sup>23</sup> mostra a evolução da média diária do valor financeiro e da quantidade referentes às operações associadas.</p><br>
-          <h4>Gráfico 3.8.1 – Valor financeiro e quantidade das operações associadas</h4>
-          <br>
-          <div id="OperacoesChart3_8_1"></div>
-          <!-- <img src="./assets/img/operacoes-13.png" alt=""> -->
-          <br><br>
-          <p>Em 2021, tanto o valor financeiro quanto a quantidade referente às operações associadas apresentaram incrementos de 10,9% e 50,2%, respectivamente, em suas médias de negociação diária. O valor financeiro diário médio passou de R$ 395,8 bilhões em 2020 para R$ 438,9 bilhões em 2021, enquanto a quantidade de conjuntos de operações associadas variou de 1.722 para 2.587 no mesmo período.</p>
-          <small class="legenda">23. Valor financeiro e quantidade diários médios das operações associadas, apurados em cada mês. Não foram consideradas operações de intermediação e operações conjugadas. A quantidade indica o número de conjuntos de operações liquidadas de forma associada e não cada operação isoladamente.</small>
-        </div>
-        
-        <div class="tab-pane fade " id="operacoes-link-11" role="tabpanel" aria-labelledby="operacoes-link-11-tab">
-          <h2 class="title">Valor financeiro e quantidade das operações de intermediação</h2>
-          <p>As operações de intermediação são operações de compra e venda de títulos, definitivas ou compromissadas, realizadas com a presença de uma ou de duas instituições intermediárias. O gráfico a seguir<sup>24</sup> mostra a evolução das médias diárias do valor financeiro e da quantidade das operações de intermediação.</p><br>
-          <h4>Gráfico 3.9.1 – Valor financeiro e quantidade das operações de intermediação</h4>
-          <br>
-          <div id="OperacoesChart3_9_1"></div>
-          <!-- <img src="./assets/img/operacoes-14.png" alt=""> -->
-          <br><br>
-          <p>Em 2021, o valor financeiro diário médio referente às operações com intermediação apresentou um incremento de 58,8%, passando de R$ 24,9 bilhões em 2020 para R$ 39,5 bilhões em 2021. No mesmo período a quantidade diária média dessas operações aumentou 2,8%, variando de 766 para 787.</p>
-          <small class="legenda">24. Valor financeiro e quantidade diários médios das operações de intermediação, apurados em cada mês. A operação de intermediação, com um ou dois corretores, foi considerada como apenas uma operação, pelo maior preço contratado; a operação em lote 1xN ou Nx1 foi considerada como N operações, pelo maior preço contratado com o comprador ou vendedor.
-          </small>
-        </div>
-        
-        <div class="tab-pane fade " id="operacoes-link-12" role="tabpanel" aria-labelledby="operacoes-link-12-tab">
-          <h2 class="title">Valor financeiro e quantidade de operações compromissadas conjugadas</h2>
-          <p>O BCB realiza exclusivamente com as instituições dealers operações de venda de títulos com compromisso de recompra, conjugadas com operações de compra de títulos com compromisso de revenda. As operações são liquidadas pelos resultados compensados e têm a finalidade de reduzir eventuais distorções causadas pela escassez momentânea de títulos para negociação no mercado secundário. O gráfico a seguir<sup>25</sup> mostra a evolução das médias diárias do valor financeiro e da quantidade envolvendo as operações de empréstimo de títulos entre as instituições dealers e o BCB.</p><br>
-          <h4>Gráfico 3.10.1 – Valor financeiro e quantidade das operações compromissadas conjugadas do BCB</h4>
-          <br>
-          <div id="OperacoesChart3_10_1"></div>
-          <!-- <img src="./assets/img/operacoes-15.png" alt=""> -->
-          <br><br>
-          <p>Em 2021, o valor financeiro das operações compromissadas conjugadas realizadas pelo BCB com as instituições dealers aumentou, enquanto a quantidade de operações permaneceu estável. Considerando somente as contratações dos títulos e os dias em que efetivamente ocorreram, o valor financeiro diário médio cresceu de R$ 162,3 milhões em 2020 para R$ 521,7 milhões em 2021, representando um aumento de 221,4%. No mesmo período, a quantidade se manteve em 1 operação por dia.</p>
-          <small class="legenda">25. Valor financeiro e quantidade diários médios das operações compromissadas conjugadas do BCB, apurados em cada mês. Para o cálculo da média, o valor financeiro foi obtido pela soma dos financeiros das operações compromissadas conjugadas e somente foram considerados os dias em que efetivamente foram liquidadas operações desse tipo. Não foram consideradas as operações conjugadas de retorno. A quantidade indica o número de conjuntos de operações liquidadas pelos resultados compensados e não cada operação isoladamente.</small>
-        </div>
-        
-        <div class="tab-pane fade " id="operacoes-link-13" role="tabpanel" aria-labelledby="operacoes-link-13-tab">
-          <h2 class="title">Valor financeiro e quantidade das operações de redesconto</h2>
-          <p>O redesconto intradia no STR é uma operação compromissada destinada a atender necessidades de liquidez dos participantes ao longo do dia. A instituição que necessita de recursos e que dispõe de títulos pode vendê-los ao BCB com o compromisso de recomprá-los no próprio dia da contratação, ao mesmo valor da venda, até o fechamento do STR. <br><br>
-          O redesconto no Sistema de Pagamentos Instantâneos (SPI) , que iniciou em novembro de 2020, é uma operação compromissada destinada a atender necessidades de liquidez dos participantes no SPI fora do horário regular de operações no STR. A instituição que necessita de recursos e que dispõe de títulos pode vendê-los ao BCB com o compromisso de recomprá-los no dia seguinte, com a cobrança de uma taxa, até o fechamento do STR. Para mais informações sobre o redesconto no SPI, consultar a Resolução BCB nº 20, de
-          1/10/2020 e a Instrução Normativa BCB nº 23, de 6/10/2020.<br><br>
-          O gráfico a seguir<sup>26</sup> mostra a evolução da média diária do valor financeiro e da quantidade referentes às operações de redesconto intradia no STR.</p><br>
-          <h4>Gráfico 3.11.1 – Valor financeiro e quantidade das operações de redesconto intradia</h4>
-          <br>
-          <div id="OperacoesChart3_11_1"></div>
-          <!-- <img src="./assets/img/operacoes-16.png" alt=""> -->
-          <br><br>
-          <p>Em 2021, o valor financeiro diário das operações de redesconto intradia
-          (código 1024) elevou-se em 20,6%, variando de R$ 221,4 bilhões em 2020 para R$ 266,9 bilhões. No mesmo período, a quantidade de operações cresceu 29,2%, passando de 923 para 1.192 operações por dia. Nessa modalidade de operação, todas são liquidadas no STR.</p>
-          <p>O gráfico a seguir<sup>27</sup>mostra a evolução da média diária do valor financeiro e da quantidade referentes às operações de redesconto no SPI.</p><br>
-          <h4>Gráfico 3.11.2 - Valor financeiro e quantidade das operações de redesconto no SPI</h4>
-          <br>
-          <div id="OperacoesChart3_11_2"></div>
-          <!-- <img src="./assets/img/operacoes-17.png" alt=""> -->
-          <br><br>
-          <p>Em 2021, o valor financeiro diário das operações de redesconto no SPI (código 1009) variou de R$ 4,4 milhões em 2020 para R$ 15,3 milhões. A quantidade se manteve em 1 operação por dia em 2021. Nessa modalidade de operação, a liquidação ocorre no SPI, por intermédio do STR.</p>
-          <small class="legenda">26. Valor financeiro e quantidade diários médios das operações de redesconto intradia, apurados em cada mês.</small>
-          <small class="legenda">27. Valor financeiro e quantidade diários médios das operações de redesconto no SPI, apurados em cada mês.</small>
-        </div>
-        
-        <div class="tab-pane fade " id="operacoes-link-14" role="tabpanel" aria-labelledby="operacoes-link-14-tab">
-          <h2 class="title">Percentual do valor financeiro movimentado nas diferentes grades de horários</h2>
-          <p>Os horários de abertura e fechamento, previstos pelo Regulamento do Selic e regulamentados na Instrução Normativa BCB nº 144, de 20 de agosto de 2021, são, respectivamente, 06h30 e 18h30, exceto para registro de operações de compra e venda, definitiva ou compromissada, à vista ou a termo, e de operações de recompra e revenda, que não incorram em liquidação financeira pelo STR, e de promessas de compra ou de venda, cujos comandos podem ser transmitidos até as 20h30; e operações de contratação de redesconto para liquidez no SPI, cujos comandos podem ser transmitidos, além do horário regular, entre o horário de encerramento do STR e 19h. O gráfico abaixo apresenta o percentual do valor financeiro diário médio das operações dentro de suas respectivas grades.</p><br>
-          <h4>Gráfico 3.12.1 – Percentual do valor financeiro movimentado nas diferentes grades de horários</h4>
-          <br>
-          <div id="OperacoesChart3_12_1"></div>
-          <!-- <img src="./assets/img/operacoes-18.png" alt=""> -->
-          <br><br>
-          <p>Em 2021, o valor financeiro diário médio das operações registradas entre 18h31 e 20h30 variou de R$ 243,3 bilhões em 2020 para R$ 380,6 bilhões, um aumento de 56,4%. O percentual do valor financeiro diário médio das operações registradas entre 6h30 e 18h30 representa 93,5%, enquanto o percentual das operações registradas entre 18h31 – 20h30 representa 6,5%.
-          </p>
-        </div>
 
-          <div class="tab-pane fade " id="operacoes-link-15" role="tabpanel" aria-labelledby="operacoes-link-15-tab">
-            <h2 class="title">Valor financeiro e quantidade das operações lançadas no Pre-matching e atualizadas no Selic
-            </h2>
-            <p>O Selic disponibilizou, em janeiro de 2021, uma plataforma que tem como objetivo automatizar o processo de conferência de operações realizado entre as instituições financeiras (Pre-matching) antes do registro no Selic. <br><br>
-            O acesso a plataforma poder ser realizado de duas formas: via Application Programming Inter (API), que foi desenvolvida para integração dos sistemas do mercado financeiro com a plataforma e; via aplicação Web, disponibilizada na RTM.<br><br>
-            O gráfico a seguir<sup>28</sup> mostra a evolução da média diária do valor financeiro e da quantidade referentes aos negócios concluídos na plataforma Pre-matching e atualizadas no Selic.</p><br>
-            <h4>Gráfico - 3.13.1 - Valor financeiro e quantidade das operações lançadas na plataforma Pre-matching e atualizadas no Selic</h4>
-            <br>
-            <div id="OperacoesChart3_13_1"></div>
-            <!-- <img src="./assets/img/operacoes-19.png" alt=""> -->
-            <br><br>
-            <p>Em 2021, o valor financeiro dos negócios realizados variou de R$ 13 milhões em março, mês em que a plataforma foi implementada, para R$ 60 milhões em dezembro. No mesmo período, a quantidade de negócios cresceu de 1 para 3.
-            </p>
-            <small class="legenda">28. Valor financeiro e quantidade diários médios de operações, apurados em cada mês.</small>
+            <div class="tab-pane fade " id="operacoes-link-07" role="tabpanel" aria-labelledby="operacoes-link-07-tab">
+              <h2 class="title">Valor financeiro e quantidade das operações compromissadas por prazo</h2>
+              <p>O gráfico a seguir<sup>19</sup> mostra a evolução do valor financeiro das operações compromissadas,
+                segregando operações <em>overnight</em>, intradia e com prazo de retorno superior a um dia.</p><br>
+              <h4>Gráfico 3.5.1 – Valor financeiro das operações compromissadas por prazo</h4>
+              <br>
+              <div id="OperacoesChart3_5_1"></div>
+              <!-- <img src="./assets/img/operacoes-08.png" alt=""> -->
+              <p>Em 2021, houve um aumento da concentração do valor financeiro diário médio nas operações compromissadas
+                com prazo de um dia (<em>overnight</em>), que representaram R$ 2,5 trilhões, cerca de 99,4% do valor de
+                todas as operações compromissadas, face ao R$ 1,7 trilhão, ou 97,7%, observado em 2020. As
+                compromissadas com prazo de mais de um dia alcançaram o volume de R$ 14,1 bilhões ou 0,6%, inferior aos
+                R$ 37,4 bilhões ou 2,1% apurados em 2020. As operações intradia apresentaram um valor financeiro de
+                apenas R$ 2,1 bilhões ou 0,1%, diminuindo em relação à proporção de R$ 3,1 bilhões ou 0,2% de 2020.
+              </p>
+              <p>O gráfico a seguir<sup>20</sup> mostra a evolução da quantidade das operações
+                compromissadas, segregando a quantidade de operações <em>overnight</em>, intradia e com prazo de retorno
+                superior a um dia.</p><br>
+              <h4>Gráfico 3.5.2 – Quantidade das operações compromissadas por prazo</h4>
+              <br>
+              <div id="OperacoesChart3_5_2"></div>
+              <!-- <img src="./assets/img/operacoes-09.png" alt=""> -->
+              <p>Em 2021, a maioria das operações compromissadas foi <em>overnight</em>, alcançando 98,7% do total ou
+                8.759 operações por dia. A proporção ficou praticamente estável em relação a 2020, quando as
+                compromissadas <em>overnight</em> representaram 98,9% do total ou 8.491 operações por dia. As
+                compromissadas com prazo superior a um dia alcançaram 111 operações por dia ou 1,3% do total, similar à
+                média de 85 operações por dia ou 1,0% apurados em 2020. As intradia foram apenas 5 por dia em 2021,
+                número menor que 2020, quando foram realizadas 8 operações.</p>
+              <small class="legenda">19. Valor financeiro diário médio das operações compromissadas, apurado em cada
+                mês. Em relação a operaçõescompromissadas, a operação “<em>overnight</em>” é a que apresenta a data do
+                compromisso no dia útil posterior; a operação "intradia" representa a operação em que sua data e a data
+                do compromisso ocorrem no mesmo dia; e “mais que <em>over</em>” é a operação em que o prazo para o
+                compromisso é superior a um dia útil.<br>
+                20. Quantidade de operações diária média das operações compromissadas, apurada em cada mês. A operação
+                "<em>overnight</em>" é a que apresenta a data do compromisso no dia útil posterior; a operação
+                “intradia” representa a operação em que sua data e a data do compromisso ocorrem no mesmo dia; e “mais
+                que <em>over</em>” é a operação em que o prazo para o compromisso é superior a um dia útil.
+              </small>
+            </div>
+
+            <div class="tab-pane fade " id="operacoes-link-08" role="tabpanel" aria-labelledby="operacoes-link-09-tab">
+              <h2 class="title">Valor financeiro e quantidade das operações definitivas</h2>
+              <p>As operações definitivas são definidas como a compra e a venda de títulos sem a assunção de
+                compromissos. O gráfico a seguir<sup>21</sup> mostra a evolução do valor financeiro diário médio das
+                operações definitivas, evidenciando o valor financeiro que foi liquidado no STR.</p><br>
+              <h4>Gráfico 3.6.1 – Valor financeiro das operações definitivas – total e com liquidação no STR</h4>
+              <br>
+              <div id="OperacoesChart3_6_1"></div>
+              <!-- <img src="./assets/img/operacoes-10.png" alt=""> -->
+              <p>Em 2021, o valor financeiro diário médio das operações definitivas elevou-se em 33%, variando de R$
+                49,8 bilhões em 2020 para R$ 66,2 bilhões. As operações liquidadas no STR elevaram-se, com um incremento
+                de 36,2% em relação ao ano anterior. O valor financeiro diário médio desse grupo de operações passou de
+                R$ 41,9 bilhões em 2020 para R$ 57 bilhões em 2021.</p>
+              <p>O gráfico a seguir<sup>22</sup> mostra a quantidade diária média de todas as
+                operações definitivas, evidenciando a quantidade das operações liquidadas no STR.</p><br>
+              <h4>Gráfico 3.6.2 – Quantidade das operações definitivas – total e com liquidação no STR</h4>
+              <br>
+              <div id="OperacoesChart3_6_2"></div>
+              <!-- <img src="./assets/img/operacoes-11.png" alt=""> -->
+              <p>Em 2021, a quantidade diária média das operações definitivas elevou-se em 29,6%, variando de 3.007
+                operações por dia em 2020 para 3.896 operações. As operações liquidadas no STR apresentaram um
+                incremento, que chegou a 28,3% em relação ao ano anterior. A quantidade diária média desse grupo de
+                operações passou de 2.002 em 2020 para 2.568 em 2021.</p>
+              <small class="legenda">21. Valor financeiro diário médio das operações definitivas, apurado em cada mês. O
+                valor financeiro STRconsidera somente as operações liquidadas no STR. Em agosto de 2018, foram
+                descartadas 18 operações sem liquidação no STR e cujos preços indicavam evidente erro operacional.<br>
+                22. Quantidade diária média de operações definitivas, apurado em cada mês. A quantidade STR considera
+                somente as operações liquidadas no STR.
+              </small>
+            </div>
+
+            <div class="tab-pane fade " id="operacoes-link-09" role="tabpanel" aria-labelledby="operacoes-link-09-tab">
+              <h2 class="title">Valor financeiro das operações de resgate e juros do Tesouro Nacional</h2>
+              <p>O gráfico abaixo mostra a evolução do valor financeiro diário médio das operações registradas no Selic
+                referentes ao resgate de títulos públicos federais custodiados e ao pagamento de juros dos títulos
+                públicos federais que, no ato de sua emissão pelo TN possuem essa característica, como as Notas do
+                Tesouro Nacional (NTN).</p><br>
+              <h4>Gráfico 3.7.1 – Valor financeiro das operações de resgate e juros do TN</h4>
+              <br>
+              <div id="OperacoesChart3_7_1"></div>
+              <!-- <img src="./assets/img/operacoes-12.png" alt=""> -->
+              <br><br>
+              <p>Em 2021, o valor financeiro diário médio das operações de resgate (código 1012) aumentou 49,9%,
+                passando de R$ 89,8 bilhões em 2020 para R$ 134,6 bilhões. As operações referentes aos juros (código
+                1060) aumentaram 9,5%, variando de R$ 14,5 bilhões em 2020 para R$ 15,9 bilhões em 2021.
+              </p>
+            </div>
+
+            <div class="tab-pane fade " id="operacoes-link-10" role="tabpanel" aria-labelledby="operacoes-link-10-tab">
+              <h2 class="title">Valor financeiro e quantidade das operações associadas</h2>
+              <p>A associação de operações permite que a liquidação seja realizada pelos resultados compensados. É um
+                mecanismo para atender necessidades de liquidez dos participantes. Podem ser associadas as operações que
+                tenham por objeto o mesmo título, desde que em seu conjunto haja apenas uma operação principal, sendo
+                todas as demais operações acessórias. As operações acessórias dão suporte para a liquidação da operação
+                principal, ou seja, são operações de financiamento, como uma operação compromissada intradia ou um
+                redesconto intradia. O gráfico a seguir<sup>23</sup> mostra a evolução da média diária do valor
+                financeiro e da quantidade referentes às operações associadas.</p><br>
+              <h4>Gráfico 3.8.1 – Valor financeiro e quantidade das operações associadas</h4>
+              <br>
+              <div id="OperacoesChart3_8_1"></div>
+              <!-- <img src="./assets/img/operacoes-13.png" alt=""> -->
+              <br><br>
+              <p>Em 2021, tanto o valor financeiro quanto a quantidade referente às operações associadas apresentaram
+                incrementos de 10,9% e 50,2%, respectivamente, em suas médias de negociação diária. O valor financeiro
+                diário médio passou de R$ 395,8 bilhões em 2020 para R$ 438,9 bilhões em 2021, enquanto a quantidade de
+                conjuntos de operações associadas variou de 1.722 para 2.587 no mesmo período.</p>
+              <small class="legenda">23. Valor financeiro e quantidade diários médios das operações associadas, apurados
+                em cada mês. Não foram consideradas operações de intermediação e operações conjugadas. A quantidade
+                indica o número de conjuntos de operações liquidadas de forma associada e não cada operação
+                isoladamente.</small>
+            </div>
+
+            <div class="tab-pane fade " id="operacoes-link-11" role="tabpanel" aria-labelledby="operacoes-link-11-tab">
+              <h2 class="title">Valor financeiro e quantidade das operações de intermediação</h2>
+              <p>As operações de intermediação são operações de compra e venda de títulos, definitivas ou
+                compromissadas, realizadas com a presença de uma ou de duas instituições intermediárias. O gráfico a
+                seguir<sup>24</sup> mostra a evolução das médias diárias do valor financeiro e da quantidade das
+                operações de intermediação.</p><br>
+              <h4>Gráfico 3.9.1 – Valor financeiro e quantidade das operações de intermediação</h4>
+              <br>
+              <div id="OperacoesChart3_9_1"></div>
+              <!-- <img src="./assets/img/operacoes-14.png" alt=""> -->
+              <br><br>
+              <p>Em 2021, o valor financeiro diário médio referente às operações com intermediação apresentou um
+                incremento de 58,8%, passando de R$ 24,9 bilhões em 2020 para R$ 39,5 bilhões em 2021. No mesmo período
+                a quantidade diária média dessas operações aumentou 2,8%, variando de 766 para 787.</p>
+              <small class="legenda">24. Valor financeiro e quantidade diários médios das operações de intermediação,
+                apurados em cada mês. A operação de intermediação, com um ou dois corretores, foi considerada como
+                apenas uma operação, pelo maior preço contratado; a operação em lote 1xN ou Nx1 foi considerada como N
+                operações, pelo maior preço contratado com o comprador ou vendedor.
+              </small>
+            </div>
+
+            <div class="tab-pane fade " id="operacoes-link-12" role="tabpanel" aria-labelledby="operacoes-link-12-tab">
+              <h2 class="title">Valor financeiro e quantidade de operações compromissadas conjugadas</h2>
+              <p>O BCB realiza exclusivamente com as instituições dealers operações de venda de títulos com compromisso
+                de recompra, conjugadas com operações de compra de títulos com compromisso de revenda. As operações são
+                liquidadas pelos resultados compensados e têm a finalidade de reduzir eventuais distorções causadas pela
+                escassez momentânea de títulos para negociação no mercado secundário. O gráfico a seguir<sup>25</sup>
+                mostra a evolução das médias diárias do valor financeiro e da quantidade envolvendo as operações de
+                empréstimo de títulos entre as instituições dealers e o BCB.</p><br>
+              <h4>Gráfico 3.10.1 – Valor financeiro e quantidade das operações compromissadas conjugadas do BCB</h4>
+              <br>
+              <div id="OperacoesChart3_10_1"></div>
+              <!-- <img src="./assets/img/operacoes-15.png" alt=""> -->
+              <br><br>
+              <p>Em 2021, o valor financeiro das operações compromissadas conjugadas realizadas pelo BCB com as
+                instituições dealers aumentou, enquanto a quantidade de operações permaneceu estável. Considerando
+                somente as contratações dos títulos e os dias em que efetivamente ocorreram, o valor financeiro diário
+                médio cresceu de R$ 162,3 milhões em 2020 para R$ 521,7 milhões em 2021, representando um aumento de
+                221,4%. No mesmo período, a quantidade se manteve em 1 operação por dia.</p>
+              <small class="legenda">25. Valor financeiro e quantidade diários médios das operações compromissadas
+                conjugadas do BCB, apurados em cada mês. Para o cálculo da média, o valor financeiro foi obtido pela
+                soma dos financeiros das operações compromissadas conjugadas e somente foram considerados os dias em que
+                efetivamente foram liquidadas operações desse tipo. Não foram consideradas as operações conjugadas de
+                retorno. A quantidade indica o número de conjuntos de operações liquidadas pelos resultados compensados
+                e não cada operação isoladamente.</small>
+            </div>
+
+            <div class="tab-pane fade " id="operacoes-link-13" role="tabpanel" aria-labelledby="operacoes-link-13-tab">
+              <h2 class="title">Valor financeiro e quantidade das operações de redesconto</h2>
+              <p>O redesconto intradia no STR é uma operação compromissada destinada a atender necessidades de liquidez
+                dos participantes ao longo do dia. A instituição que necessita de recursos e que dispõe de títulos pode
+                vendê-los ao BCB com o compromisso de recomprá-los no próprio dia da contratação, ao mesmo valor da
+                venda, até o fechamento do STR. <br><br>
+                O redesconto no Sistema de Pagamentos Instantâneos (SPI) , que iniciou em novembro de 2020, é uma
+                operação compromissada destinada a atender necessidades de liquidez dos participantes no SPI fora do
+                horário regular de operações no STR. A instituição que necessita de recursos e que dispõe de títulos
+                pode vendê-los ao BCB com o compromisso de recomprá-los no dia seguinte, com a cobrança de uma taxa, até
+                o fechamento do STR. Para mais informações sobre o redesconto no SPI, consultar a Resolução BCB nº 20,
+                de
+                1/10/2020 e a Instrução Normativa BCB nº 23, de 6/10/2020.<br><br>
+                O gráfico a seguir<sup>26</sup> mostra a evolução da média diária do valor financeiro e da quantidade
+                referentes às operações de redesconto intradia no STR.</p><br>
+              <h4>Gráfico 3.11.1 – Valor financeiro e quantidade das operações de redesconto intradia</h4>
+              <br>
+              <div id="OperacoesChart3_11_1"></div>
+              <!-- <img src="./assets/img/operacoes-16.png" alt=""> -->
+              <br><br>
+              <p>Em 2021, o valor financeiro diário das operações de redesconto intradia
+                (código 1024) elevou-se em 20,6%, variando de R$ 221,4 bilhões em 2020 para R$ 266,9 bilhões. No mesmo
+                período, a quantidade de operações cresceu 29,2%, passando de 923 para 1.192 operações por dia. Nessa
+                modalidade de operação, todas são liquidadas no STR.</p>
+              <p>O gráfico a seguir<sup>27</sup>mostra a evolução da média diária do valor financeiro e da quantidade
+                referentes às operações de redesconto no SPI.</p><br>
+              <h4>Gráfico 3.11.2 - Valor financeiro e quantidade das operações de redesconto no SPI</h4>
+              <br>
+              <div id="OperacoesChart3_11_2"></div>
+              <!-- <img src="./assets/img/operacoes-17.png" alt=""> -->
+              <br><br>
+              <p>Em 2021, o valor financeiro diário das operações de redesconto no SPI (código 1009) variou de R$ 4,4
+                milhões em 2020 para R$ 15,3 milhões. A quantidade se manteve em 1 operação por dia em 2021. Nessa
+                modalidade de operação, a liquidação ocorre no SPI, por intermédio do STR.</p>
+              <small class="legenda">26. Valor financeiro e quantidade diários médios das operações de redesconto
+                intradia, apurados em cada mês.<br>
+                27. Valor financeiro e quantidade diários médios das operações de redesconto no SPI, apurados em cada
+                mês.
+              </small>
+            </div>
+
+            <div class="tab-pane fade " id="operacoes-link-14" role="tabpanel" aria-labelledby="operacoes-link-14-tab">
+              <h2 class="title">Percentual do valor financeiro movimentado nas diferentes grades de horários</h2>
+              <p>Os horários de abertura e fechamento, previstos pelo Regulamento do Selic e regulamentados na Instrução
+                Normativa BCB nº 144, de 20 de agosto de 2021, são, respectivamente, 06h30 e 18h30, exceto para registro
+                de operações de compra e venda, definitiva ou compromissada, à vista ou a termo, e de operações de
+                recompra e revenda, que não incorram em liquidação financeira pelo STR, e de promessas de compra ou de
+                venda, cujos comandos podem ser transmitidos até as 20h30; e operações de contratação de redesconto para
+                liquidez no SPI, cujos comandos podem ser transmitidos, além do horário regular, entre o horário de
+                encerramento do STR e 19h. O gráfico abaixo apresenta o percentual do valor financeiro diário médio das
+                operações dentro de suas respectivas grades.</p><br>
+              <h4>Gráfico 3.12.1 – Percentual do valor financeiro movimentado nas diferentes grades de horários</h4>
+              <br>
+              <div id="OperacoesChart3_12_1"></div>
+              <!-- <img src="./assets/img/operacoes-18.png" alt=""> -->
+              <br><br>
+              <p>Em 2021, o valor financeiro diário médio das operações registradas entre 18h31 e 20h30 variou de R$
+                243,3 bilhões em 2020 para R$ 380,6 bilhões, um aumento de 56,4%. O percentual do valor financeiro
+                diário médio das operações registradas entre 6h30 e 18h30 representa 93,5%, enquanto o percentual das
+                operações registradas entre 18h31 – 20h30 representa 6,5%.
+              </p>
+            </div>
+
+            <div class="tab-pane fade " id="operacoes-link-15" role="tabpanel" aria-labelledby="operacoes-link-15-tab">
+              <h2 class="title">Valor financeiro e quantidade das operações lançadas no Pre-matching e atualizadas no
+                Selic
+              </h2>
+              <p>O Selic disponibilizou, em janeiro de 2021, uma plataforma que tem como objetivo automatizar o processo
+                de conferência de operações realizado entre as instituições financeiras (Pre-matching) antes do registro
+                no Selic. <br><br>
+                O acesso a plataforma poder ser realizado de duas formas: via Application Programming Inter (API), que
+                foi desenvolvida para integração dos sistemas do mercado financeiro com a plataforma e; via aplicação
+                Web, disponibilizada na RTM.<br><br>
+                O gráfico a seguir<sup>28</sup> mostra a evolução da média diária do valor financeiro e da quantidade
+                referentes aos negócios concluídos na plataforma Pre-matching e atualizadas no Selic.</p><br>
+              <h4>Gráfico - 3.13.1 - Valor financeiro e quantidade das operações lançadas na plataforma Pre-matching e
+                atualizadas no Selic</h4>
+              <br>
+              <div id="OperacoesChart3_13_1"></div>
+              <!-- <img src="./assets/img/operacoes-19.png" alt=""> -->
+              <br><br>
+              <p>Em 2021, o valor financeiro dos negócios realizados variou de R$ 13 milhões em março, mês em que a
+                plataforma foi implementada, para R$ 60 milhões em dezembro. No mesmo período, a quantidade de negócios
+                cresceu de 1 para 3.
+              </p>
+              <small class="legenda">28. Valor financeiro e quantidade diários médios de operações, apurados em cada
+                mês.</small>
+            </div>
+
           </div>
-          
-        </div>
 
-        <div class="content-nav">
-          <a href="acessos.html" class="button prev">Anterior</a>
-          <a href="leiloes.html" class="button next">Próximo</a>
+          <div class="content-nav">
+            <a href="acessos.html" class="button prev">Anterior</a>
+            <a href="leiloes.html" class="button next">Próximo</a>
+          </div>
+
         </div>
+      </div>
+    </div>
+  </section>
+  <div class="search-results">
+    <div class="close"></div>
+    <div class="search-results-inner">
+      <div class="title">Resultados</div>
+      <div class="focus">
 
       </div>
     </div>
   </div>
-</section>  <div class="search-results">
-  <div class="close"></div>
-    <div class="search-results-inner">
-    <div class="title">Resultados</div>
-      <div class="focus">
-        
-      </div>
-    </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@popperjs/core@2"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
-<script src="./assets/js/aos.js"></script>
-<script src="./assets/js/slick.min.js"></script>
-<!-- <script src="./assets/js/scrolloverflow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+    integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/slick.min.js"></script>
+  <!-- <script src="./assets/js/scrolloverflow.min.js"></script>
 <script src="./assets/js/fullpage.js"></script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.33.2/apexcharts.min.js" integrity="sha512-iBEfFld2z1SAXCPmgoA40VQtqGP0cEJw4fy+t3ARW30uEfzf8hyrmm4mc5qdth3wZRPdKTv/auk5WH52klRVDg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/apexcharts@3.28.3/dist/apexcharts.min.js"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
-<script src="./assets/js/chartsOperacoes.js"></script>
-<script src="./assets/js/chartsJSOperacoes.js"></script>
-<script src="./assets/js/main.js"></script>
-<script>
-  AOS.init();
-</script>      <script type="text/javascript">
-// 	var myFullpage = new fullpage('#fullpage'
-//   , {licenseKey: '7C9DAA24-E8D442E3-BBA388B3-781A75B5',
-//     anchors:['hero', 'about', 'cases','faq','testimonials','footer'],
-//     menu: '#myMenu',
-//     scrollOverflow: true,
-// });
-</script>
-<script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.33.2/apexcharts.min.js" integrity="sha512-iBEfFld2z1SAXCPmgoA40VQtqGP0cEJw4fy+t3ARW30uEfzf8hyrmm4mc5qdth3wZRPdKTv/auk5WH52klRVDg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.28.3/dist/apexcharts.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
+  <script src="./assets/js/chartsOperacoes.js"></script>
+  <script src="./assets/js/chartsJSOperacoes.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script type="text/javascript">
+    // 	var myFullpage = new fullpage('#fullpage'
+    //   , {licenseKey: '7C9DAA24-E8D442E3-BBA388B3-781A75B5',
+    //     anchors:['hero', 'about', 'cases','faq','testimonials','footer'],
+    //     menu: '#myMenu',
+    //     scrollOverflow: true,
+    // });
+  </script>
+  <script>
     AOS.init();
   </script>
 </body>
+
 </html>
