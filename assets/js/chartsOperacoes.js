@@ -101,6 +101,7 @@
           },
           xaxis: {
             categories: ["JAN/17", "FEV/17", "MAR/17", "ABR/17", "MAI/17", "JUN/17", "JUL/17", "AGO/17", "SET/17", "OUT/17", "NOV/17", "DEZ/17", "JAN/18", "FEV/18", "MAR/18", "ABR/18", "MAI/18", "JUN/18", "JUL/18", "AGO/18", "SET/18", "OUT/18", "NOV/18", "DEZ/18", "JAN/19", "FEV/19", "MAR/19", "ABR/19", "MAI/19", "JUN/19", "JUL/19", "AGO/19", "SET/19", "OUT/19", "NOV/19", "DEZ/19", "JAN/20", "FEV/20", "MAR/20", "ABR/20", "MAI/20", "JUN/20", "JUL/20", "AGO/20", "SET/20", "OUT/20", "NOV/20", "DEZ/20", "JAN/21", "FEV/21", "MAR/21", "ABR/21", "MAI/21", "JUN/21", "JUL/21", "AGO/21", "SET/21", "OUT/21", "NOV/21", "DEZ/21"],
+            tickAmount: 20,
             labels: {
               hideOverlappingLabels: true,
             }
@@ -1147,6 +1148,7 @@
         },
         xaxis: {
           categories: ["JAN/17", "FEV/17", "MAR/17", "ABR/17", "MAI/17", "JUN/17", "JUL/17", "AGO/17", "SET/17", "OUT/17", "NOV/17", "DEZ/17", "JAN/18", "FEV/18", "MAR/18", "ABR/18", "MAI/18", "JUN/18", "JUL/18", "AGO/18", "SET/18", "OUT/18", "NOV/18", "DEZ/18", "JAN/19", "FEV/19", "MAR/19", "ABR/19", "MAI/19", "JUN/19", "JUL/19", "AGO/19", "SET/19", "OUT/19", "NOV/19", "DEZ/19", "JAN/20", "FEV/20", "MAR/20", "ABR/20", "MAI/20", "JUN/20", "JUL/20", "AGO/20", "SET/20", "OUT/20", "NOV/20", "DEZ/20", "JAN/21", "FEV/21", "MAR/21", "ABR/21", "MAI/21", "JUN/21", "JUL/21", "AGO/21", "SET/21", "OUT/21", "NOV/21", "DEZ/21"],
+          tickAmount: 20,
           labels: {
             hideOverlappingLabels: true,
           }
