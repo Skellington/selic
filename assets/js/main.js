@@ -46,14 +46,14 @@
 }([function (e, n) {
   ! function (e, n, o) {
     "use strict";
-    var t = n.querySelector("body"),
-      r = o("header.header"),
-      l = o(".menu-container");
-    n.querySelector(".menu-trigger").addEventListener("click", (function () {
-      l.toggle("show-menu")
-    })), o(".menu-container li").on("click", (function () {
-      l.toggle("show-menu")
-    }));
+    // var t = n.querySelector("body"),
+    //   r = o("header.header"),
+    //   l = o(".menu-container");
+    // n.querySelector(".menu-trigger").addEventListener("click", (function () {
+    //   l.toggle("show-menu")
+    // })), o(".menu-container li").on("click", (function () {
+    //   l.toggle("show-menu")
+    // }));
     var a = o(window);
     a.on("scroll touchstart", (function () {
       a.scrollTop() > 150 ? (o("body").addClass("show-btn-bottom"), r.addClass("show-scroll")) : (o("body").removeClass("show-btn-bottom"), r.removeClass("show-scroll"))
@@ -86,3 +86,19 @@
     }))
   }(window, document, jQuery)
 }]);
+
+var main = {
+    init: function() {
+        this.main();
+    },
+    main: function() {
+        $(".menu-trigger").click(function() {
+            if ($(".menu-container").hasClass("show-menu")) {
+                $(".menu-container").removeClass("show-menu");
+            } else {
+                $(".menu-container").addClass("show-menu");
+            }
+        });
+    },
+}
+main.init();

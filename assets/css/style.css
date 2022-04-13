@@ -1659,9 +1659,14 @@ header.header {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 10;
   background-color: #002e59;
   border-bottom: solid 1px #dbc27d;
-  z-index: 10
+}
+header .container {
+  position: relative;
+  z-index: 10;
+  background-color: #002e59;
 }
 
 header.header .row {
@@ -1795,21 +1800,34 @@ header.header .download a:before {
 }
 
 .menu-container {
-  display: none;
   position: absolute;
+  z-index: 2;
   width: 100%;
   left: 0;
-  bottom: 0;
+  top: -70px;
   height: 77px;
-  margin-bottom: -77px;
   background-color: rgba(0, 46, 89, 0.5);
-  backdrop-filter: blur(15px)
+  backdrop-filter: blur(15px);
+  -webkit-transition:.3s ease-out
 }
 
 .menu-container.show-menu {
-  display: block
+  top: 77px;
+  -webkit-transition:.3s ease-out
 }
 
+@media (max-width: 992px) {
+  .menu-container {
+    top: -100%;
+  }
+  .menu-container.show-menu {
+    top: 77px;
+  }
+}
+
+.menu-container .container {
+  background-color: transparent;
+}
 .menu-container .col-12 {
   border: 0 !important
 }
