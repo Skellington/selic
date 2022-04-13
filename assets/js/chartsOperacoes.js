@@ -448,7 +448,7 @@
             colors: ["#002E59", "#DBC476"]
           },
           series: [{
-            name: "Financeiro",
+            name: "Total",
             data: [25.22, 31.53, 31.53, 27.48, 31.93, 29.54, 29.2, 27.05, 36.26, 23.18, 24.54, 30.85, 29.89, 30.16, 41.47, 30.77, 38.26, 42.87, 28.92, 33.45, 37.88, 33.25, 29.2, 36.36, 35.84, 40.36, 46.97, 32.87, 37.42, 46.05, 37.54, 39.34, 42.55, 45.53, 39.19, 43.22, 42.42, 44.14, 55, 37.96, 37.73, 46, 53.44, 47.77, 57.31, 54.32, 56.92, 64.4, 61.48, 63.95, 80.49, 63.6, 64.56, 66.94, 62.17, 65.31, 80.79, 69.88, 53.62, 61.94]
           }, {
             name: "STR",
@@ -476,16 +476,19 @@
           },
           xaxis: {
             categories: ["JAN/17", "FEV/17", "MAR/17", "ABR/17", "MAI/17", "JUN/17", "JUL/17", "AGO/17", "SET/17", "OUT/17", "NOV/17", "DEZ/17", "JAN/18", "FEV/18", "MAR/18", "ABR/18", "MAI/18", "JUN/18", "JUL/18", "AGO/18", "SET/18", "OUT/18", "NOV/18", "DEZ/18", "JAN/19", "FEV/19", "MAR/19", "ABR/19", "MAI/19", "JUN/19", "JUL/19", "AGO/19", "SET/19", "OUT/19", "NOV/19", "DEZ/19", "JAN/20", "FEV/20", "MAR/20", "ABR/20", "MAI/20", "JUN/20", "JUL/20", "AGO/20", "SET/20", "OUT/20", "NOV/20", "DEZ/20", "JAN/21", "FEV/21", "MAR/21", "ABR/21", "MAI/21", "JUN/21", "JUL/21", "AGO/21", "SET/21", "OUT/21", "NOV/21", "DEZ/21"],
+            tickAmount: 20,
             labels: {
-              rotate: -90
+              hideOverlappingLabels:true, 
             }
           },
-          yaxis: {
-            title: {
-              text: "Valor Financeiro ( trilhóes)"
+          yaxis: [
+            {
+              title: {
+                text: "Valor financeiro (R$ bilhões)"
+              },
+              decimalsInFloat: false
             },
-            decimalsInFloat: 3
-          },
+          ],
           dataLabels: {
             enabled: !1
           }
