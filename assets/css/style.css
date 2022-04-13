@@ -1598,7 +1598,8 @@ h4 {
   color: #033069;
 }
 
-section.internal .internal-content .internal-texts p {
+section.internal .internal-content .internal-texts p,
+section.internal .internal-content .internal-texts ul li {
   color: #666;
   font-size: 1rem
 }
