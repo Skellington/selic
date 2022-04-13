@@ -871,11 +871,11 @@
           series: [{
             name: "Financeiro",
             type: "column",
-            data: ["4,023", "4,833", "1,533", "3,784", "2,681", "3,938", "4,296", "19,554", "21,697", "13,711", "19,008", "20,530", "26,302", "46,696"]
+            data: [4.023 ,4.833 ,1.533 ,3.784 ,2.681 ,3.938 ,4.296 ,19.554 ,21.697 ,13.711 ,19.008 ,20.530 ,26.302 ,46.696 ]
           }, {
             name: "Quantidade",
             type: "line",
-            data: ["2", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"]
+            data: [2.059, 1.045, 1.150, 1.389, 1.091, 1.375, 1.385, 1.385, 1.357, 1.071, 1.143, 1.167, 1.000, 1.333]
           }],
           chart: {
             stacked: !0,
@@ -903,17 +903,25 @@
               rotate: -90
             }
           },
-          yaxis: {
-            title: {
-              text: "Valor Financeiro ( trilhóes)"
+          yaxis: [
+            {
+              title: {
+                text: "Valor financeiro (R$ milhões)"
+              },
+              decimalsInFloat: false
             },
-            decimalsInFloat: 3
-          },
+            {
+              opposite:true,
+              title: {
+                text: "Quantidade"
+              }
+            }
+          ],
           dataLabels: {
             enabled: !1
           }
         }, "stroke", {
-          width: [5, 5],
+          width: 1,
           curve: "straight",
           dashArray: [0, 0]
         }), a(U, "legend", {
